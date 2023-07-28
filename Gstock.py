@@ -17,9 +17,9 @@ canvas.create_rectangle(400, 70, 1500, 0, fill="#55259F")
 canvas.create_rectangle(0, 70, 400, 0, fill="#492089")
 canvas.create_line(400, 145, 1500, 145, fill="#492089", width=2)
 canvas.create_text(200, 40, text="Stock Net", fill="white", font='Helvetica 15 bold')
-
+#contenu du premire page
+canvas.create_rectangle(400, 800, 1500, 146, fill="grey")
 canvas.pack()
-
 # button name + width
 button = tk.Button(r, text='Log out', width=10, command=r.destroy, background="white", fg="#683FA9")
 button.place(x=1380, y=10)
@@ -49,9 +49,7 @@ button.place(x=1, y=330)
 #Modifer
 button = tk.Button(r, text='Setting', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white")
 button.place(x=1, y=380)
-
 r.mainloop()
-
 # fg = coleur du text dans buton
 # background = coleur du button
 # highlightbackground = coleure du cadre du button
