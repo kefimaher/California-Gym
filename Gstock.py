@@ -1,13 +1,8 @@
 import tkinter as tk
-
-
-
 from PIL import ImageTk, Image
 r = tk.Tk()
-
 # Titre du page
 r.title('Gestion Du Stock')
-
 # canva
 canvas = tk.Canvas(r, width=1500, height=800, background='grey')
 # line
@@ -22,17 +17,16 @@ canvas.create_rectangle(400,800,1500,0,fill="white")
 canvas.create_rectangle(400,70,1500,0,fill="#55259F")
 # barre de navigation a haut a droite
 canvas.create_rectangle(0,70,400,0,fill="#492089")
+canvas.create_line(400,145,1500,145, fill="#492089", width=2)
 canvas.pack()
 
 
 # button name + width
 button = tk.Button(r, text='Close', width=10, command=r.destroy)
-# les cordonne du button x
+# les cordonne du button
 button.place(x=1380,y=10)
-
 # button name + width
 button = tk.Button(r, text='maher', width=10, command="")
 # les cordonne du button
 button.place(x=10,y=10)
-
 r.mainloop()
