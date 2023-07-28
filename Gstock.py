@@ -22,7 +22,7 @@ canvas.pack()
 
 
 # button name + width
-button = tk.Button(r, text='Close', width=10, command=r.destroy, background="white", fg="#683FA9")
+button = tk.Button(r, text='Log out', width=10, command=r.destroy, background="white", fg="#683FA9")
 button.place(x=1380, y=10)
 # button name + width
 button = tk.Button(r, text='button1', width=10, background="#683FA9", fg="white")
@@ -35,14 +35,14 @@ button = tk.Button(r, text='button3', width=10, background="#683FA9", fg="white"
 button.place(x=550, y=113)
 
 # button navbar a gauche vertical
-# button name + width
-button = tk.Button(r, text='button7', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9")
+# button item list : afficher un page contien la list des produit dans la table (id,image,nom,prix,quantite)
+button = tk.Button(r, text='Items List', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white")
 button.place(x=1, y=180)
-# button name + width
-button = tk.Button(r, text='button7', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9")
+# button New items : ajouter un produit dans la table (id,image,nom,prix,quantite)
+button = tk.Button(r, text='New Items', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white")
 button.place(x=1, y=230)
 # button name + width
-button = tk.Button(r, text='button7', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9")
+button = tk.Button(r, text='button7', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white")
 button.place(x=1, y=280)
 # button name + width
 button = tk.Button(r, text='button7', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white")
