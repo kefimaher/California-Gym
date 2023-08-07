@@ -4,7 +4,14 @@ r = tk.Tk()
 # Titre du page
 r.title('Stock Net')
 # canva
+
+def cacher_rectangle():
+    canvas.itemconfigure(z, state=tk.NORMAL)
+
+def afficher_rectangle():
+    canvas.itemconfigure(z, state=tk.HIDDEN)
 canvas = tk.Canvas(r, width=1500, height=800, background='grey')
+
 # line
 canvas.create_line(400, 0, 400, 800)
 # barre de navigation a gauche
@@ -16,12 +23,10 @@ canvas.create_rectangle(400, 70, 1500, 0, fill="#55259F")
 # barre de navigation a haut a droite
 canvas.create_rectangle(0, 70, 400, 0, fill="#492089")
 canvas.create_line(400, 145, 1500, 145, fill="#492089", width=2)
-canvas.create_text(200, 40, text="Stock Net", fill="white", font='Helvetica 15 bold')
-
+maher = canvas.create_text(200, 40, text="Stock Net", fill="white", font='Helvetica 15 bold')
+z = canvas.create_rectangle(200, 800, 200, 146, fill="red")
 # x = canvas.create_rectangle(400, 800, 1500, 146, fill="white")
-#contenu du deuxime page
 # y = canvas.create_rectangle(400, 800, 1500, 146, fill="grey")
-# z = canvas.create_rectangle(200, 500, 250, 146, fill="red")
 canvas.pack()
 # button name + width
 button = tk.Button(r, text='Log out', width=10, command=r.destroy, background="white", fg="#683FA9")
@@ -38,11 +43,11 @@ button.place(x=550, y=113)
 
 # button navbar a gauche vertical
 #Item list : afficher un page contien la list des produit dans la table (id,image,nom,prix,quantite)
-button = tk.Button(r, text='Items List', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white")
+button = tk.Button(r, text='Items List', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=afficher_rectangle())
 button.place(x=1, y=180)
 #Button New items : ajouter un produit dans la table (id,image,nom,prix,quantite)
-button = tk.Button(r, text='New Items', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white")
-button.place(x=1, y=230)
+bu = tk.Button(r, text='New Items', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=cacher_rectangle())
+bu.place(x=1, y=230)
 #Tout les fisher
 button = tk.Button(r, text='Document', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white")
 button.place(x=1, y=280)
