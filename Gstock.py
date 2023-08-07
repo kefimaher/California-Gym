@@ -19,6 +19,7 @@ canvas.create_line(400, 145, 1500, 145, fill="#492089", width=2)
 canvas.create_text(200, 40, text="Stock Net", fill="white", font='Helvetica 15 bold')
 #contenu du premire page
 canvas.create_rectangle(400, 800, 1500, 146, fill="grey")
+canvas.create_rectangle(400, 800, 1500, 146, fill="red")
 canvas.pack()
 # button name + width
 button = tk.Button(r, text='Log out', width=10, command=r.destroy, background="white", fg="#683FA9")
@@ -35,10 +36,10 @@ button.place(x=550, y=113)
 
 # button navbar a gauche vertical
 #Item list : afficher un page contien la list des produit dans la table (id,image,nom,prix,quantite)
-button = tk.Button(r, text='Items List', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white")
+button = tk.Button(r, text='Items List', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=lambda: label.pack_forget())
 button.place(x=1, y=180)
 #Button New items : ajouter un produit dans la table (id,image,nom,prix,quantite)
-button = tk.Button(r, text='New Items', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white")
+button = tk.Button(r, text='New Items', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=lambda: label.pack())
 button.place(x=1, y=230)
 #Tout les fisher
 button = tk.Button(r, text='Document', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white")
@@ -49,6 +50,11 @@ button.place(x=1, y=330)
 #Modifer
 button = tk.Button(r, text='Setting', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white")
 button.place(x=1, y=380)
+
+
+label = tk.Label(r, text = "Test")
+label.pack()
+
 r.mainloop()
 # fg = coleur du text dans buton
 # background = coleur du button
