@@ -65,7 +65,7 @@ setting.place(x=1, y=380)
 # pour créer une fenêtre supplémentaire.
 
 page = tk.Frame(r, width=500, height=500, background='grey')
-# page.place(x=500, y=500)
+
 r.mainloop()
 
 
