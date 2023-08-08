@@ -1,16 +1,17 @@
 import tkinter as tk
 from PIL import ImageTk, Image
 r = tk.Tk()
+root = tk.Tk()
 # Titre du page
 r.title('Stock Net')
 
 def toggle_page_visibility():
     if page.winfo_viewable():
         page.pack_forget()
-        setting.config(text="Show Page")
+       # setting.config(text="Show Page")
     else:
         page.pack()
-        setting.config(text="Hide Page")
+      #  setting.config(text="Hide Page")
 
 canvas = tk.Canvas(r, width=1500, height=800, background='grey')
 
@@ -64,7 +65,12 @@ exp .place(x=1, y=330)
 setting = tk.Button(r, text='Setting', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=toggle_page_visibility)
 setting.place(x=1, y=380)
 
-page = tk.Frame(r, width=1000, height=1000, bg="black")
+
+
+# pour créer une fenêtre supplémentaire.
+# root.geometry("800x1300+100+50")
+# page = tk.Frame(root, width=800, height=1500, background='grey')
+
 
 r.mainloop()
 # fg = coleur du text dans buton
