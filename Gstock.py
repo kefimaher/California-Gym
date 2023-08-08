@@ -1,7 +1,7 @@
 import tkinter as tk
 from PIL import ImageTk, Image
 r = tk.Tk()
-root = tk.Tk()
+
 # Titre du page
 r.title('Stock Net')
 
@@ -26,11 +26,7 @@ canvas.create_rectangle(400, 70, 1500, 0, fill="#55259F")
 # barre de navigation a haut a droite
 canvas.create_rectangle(0, 70, 400, 0, fill="#492089")
 canvas.create_line(400, 145, 1500, 145, fill="#492089", width=2)
-maher = canvas.create_text(200, 40, text="Stock Net", fill="white", font='Helvetica 15 bold')
-
-
-
-
+Title = canvas.create_text(200, 40, text="Stock Net", fill="white", font='Helvetica 15 bold')
 
 # x = canvas.create_rectangle(400, 800, 1500, 146, fill="white")
 # y = canvas.create_rectangle(400, 800, 1500, 146, fill="grey")
@@ -66,13 +62,16 @@ setting = tk.Button(r, text='Setting', width=46, background="#3E4146", fg="white
 setting.place(x=1, y=380)
 
 
-
 # pour créer une fenêtre supplémentaire.
-# root.geometry("800x1300+100+50")
-# page = tk.Frame(root, width=800, height=1500, background='grey')
 
-
+page = tk.Frame(r, width=500, height=500, background='grey')
+# page.place(x=500, y=500)
 r.mainloop()
+
+
 # fg = coleur du text dans buton
 # background = coleur du button
 # highlightbackground = coleure du cadre du button
+# pour créer une fenêtre supplémentaire.
+# root.geometry("800x1300+100+50")
+# page = tk.Frame(root, width=800, height=1500, background='grey')
