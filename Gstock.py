@@ -57,6 +57,6 @@ setting = tk.Button(r, text='Setting', width=46, background="#3E4146", fg="white
 setting.place(x=1, y=380)
 settings = tk.Frame(canvas, width=1500, height=800, background='#B69DDC')
 items = tk.Frame(canvas, width=1500, height=800, background='grey')
-
+items = tk.Label(canvas, text="Items Page")
 #last save
 r.mainloop()
