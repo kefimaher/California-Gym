@@ -4,14 +4,12 @@ r = tk.Tk()
 # Titre du page
 r.title('Stock Net')
 
-def toggle_page_visibility():
-    if items.winfo_viewable():
-        items.pack_forget()
-       # setting.config(text="Show Page")
-    else:
-        items.pack()
-      #  setting.config(text="Hide Page")
-
+def item_visibility():
+ settings.place(x=400, y=145)
+ items.place(x=1500, y=800)
+def settings_visibility():
+ settings.place(x=400, y=145)
+ items.place(x=400, y=145)
 
 canvas = tk.Canvas(r, width=1500, height=800, background='grey')
 # line
@@ -43,7 +41,7 @@ test2 = tk.Button(r, text='test2', width=10, background="#683FA9", fg="white")
 test2.place(x=550, y=113)
 # button navbar a gauche vertical
 #Item list : afficher un page contien la list des produit dans la table (id,image,nom,prix,quantite)
-items = tk.Button(r, text='Items List', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white")
+items = tk.Button(r, text='Items List', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=item_visibility)
 items.place(x=1, y=180)
 #Button New items : ajouter un produit dans la table (id,image,nom,prix,quantite)
 news = tk.Button(r, text='New Items', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white")
@@ -55,7 +53,10 @@ document.place(x=1, y=280)
 exp = tk.Button(r, text='Expences', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white")
 exp .place(x=1, y=330)
 #Modifer
-setting = tk.Button(r, text='Setting', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=toggle_page_visibility)
+setting = tk.Button(r, text='Setting', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=settings_visibility)
 setting.place(x=1, y=380)
+settings = tk.Frame(canvas, width=1500, height=800, background='#B69DDC')
 items = tk.Frame(canvas, width=1500, height=800, background='grey')
+
+#last save
 r.mainloop()
