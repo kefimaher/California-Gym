@@ -8,7 +8,7 @@ def item_visibility():
  settings.place(x=400, y=145)
  items.place(x=1500, y=800)
 def settings_visibility():
- settings.place(x=400, y=145)
+ settings.place(x=1500, y=800)
  items.place(x=400, y=145)
 
 canvas = tk.Canvas(r, width=1500, height=800, background='grey')
@@ -57,6 +57,5 @@ setting = tk.Button(r, text='Setting', width=46, background="#3E4146", fg="white
 setting.place(x=1, y=380)
 settings = tk.Frame(canvas, width=1500, height=800, background='#B69DDC')
 items = tk.Frame(canvas, width=1500, height=800, background='grey')
-items = tk.Label(canvas, text="Items Page")
 #last save
 r.mainloop()
