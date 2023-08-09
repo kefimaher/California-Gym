@@ -1,20 +1,19 @@
 import tkinter as tk
 from PIL import ImageTk, Image
 r = tk.Tk()
-
 # Titre du page
 r.title('Stock Net')
 
 def toggle_page_visibility():
-    if page.winfo_viewable():
-        page.pack_forget()
+    if items.winfo_viewable():
+        items.pack_forget()
        # setting.config(text="Show Page")
     else:
-        page.pack()
+        items.pack()
       #  setting.config(text="Hide Page")
 
-canvas = tk.Canvas(r, width=1500, height=800, background='grey')
 
+canvas = tk.Canvas(r, width=1500, height=800, background='grey')
 # line
 canvas.create_line(400, 0, 400, 800)
 # barre de navigation a gauche
@@ -27,7 +26,6 @@ canvas.create_rectangle(400, 70, 1500, 0, fill="#55259F")
 canvas.create_rectangle(0, 70, 400, 0, fill="#492089")
 canvas.create_line(400, 145, 1500, 145, fill="#492089", width=2)
 Title = canvas.create_text(200, 40, text="Stock Net", fill="white", font='Helvetica 15 bold')
-
 # x = canvas.create_rectangle(400, 800, 1500, 146, fill="white")
 # y = canvas.create_rectangle(400, 800, 1500, 146, fill="grey")
 canvas.pack()
@@ -43,7 +41,6 @@ test1.place(x=420, y=113)
 # button name + width
 test2 = tk.Button(r, text='test2', width=10, background="#683FA9", fg="white")
 test2.place(x=550, y=113)
-
 # button navbar a gauche vertical
 #Item list : afficher un page contien la list des produit dans la table (id,image,nom,prix,quantite)
 items = tk.Button(r, text='Items List', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white")
@@ -60,18 +57,5 @@ exp .place(x=1, y=330)
 #Modifer
 setting = tk.Button(r, text='Setting', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=toggle_page_visibility)
 setting.place(x=1, y=380)
-
-
-# pour créer une fenêtre supplémentaire.
-
-page = tk.Frame(r, width=500, height=500, background='grey')
-
+items = tk.Frame(canvas, width=1500, height=800, background='grey')
 r.mainloop()
-
-
-# fg = coleur du text dans buton
-# background = coleur du button
-# highlightbackground = coleure du cadre du button
-# pour créer une fenêtre supplémentaire.
-# root.geometry("800x1300+100+50")
-# page = tk.Frame(root, width=800, height=1500, background='grey')
