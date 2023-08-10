@@ -3,7 +3,6 @@ from PIL import ImageTk, Image
 r = tk.Tk()
 # Titre du page
 r.title('Stock Net')
-
 def item_visibility():
  items.place(x=400, y=145)
  setting.place(x=1500, y=800)
@@ -16,8 +15,6 @@ def settings_visibility():
  news.place(x=1500, y=800)
  document.place(x=1500, y=800)
  exp.place(x=1500, y=800)
-
-
 def news_visibility():
  news.place(x=400, y=145)
  setting.place(x=1500, y=800)
@@ -36,9 +33,6 @@ def exp_visibility():
  items.place(x=1500, y=800)
  document.place(x=1500, y=800)
  exp.place(x=400, y=145)
-
-
-
 canvas = tk.Canvas(r, width=1500, height=800, background='grey')
 # line
 canvas.create_line(400, 0, 400, 800)
@@ -84,16 +78,19 @@ exp.place(x=1, y=330)
 setting = tk.Button(r, text='Setting', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=settings_visibility)
 setting.place(x=1, y=380)
 #button links
-setting = tk.Frame(canvas, width=1500, height=800, background='red')
-items = tk.Frame(canvas, width=1500, height=800, background='grey')
-exp  = tk.Frame(canvas, width=1500, height=800, background='red')
-document = tk.Frame(canvas, width=1500, height=800, background='green')
-news = tk.Frame(canvas, width=1500, height=800, background='black')
-
-label = tk.Label(setting, text="Page setting ")
-label.place (x=200, y=200)
-
-
-
-#last save
+setting = tk.Frame(canvas, width=1500, height=800, background='#F17394')
+items = tk.Frame(canvas, width=1500, height=800, background='#F5E864')
+exp  = tk.Frame(canvas, width=1500, height=800, background='#97EA90')
+document = tk.Frame(canvas, width=1500, height=800, background='#90EADB')
+news = tk.Frame(canvas, width=1500, height=800, background='#AD90EA')
+items_page_text = tk.Label(items, text="Contenu du page items ")
+items_page_text.place (x=200, y=200)
+new_page_text = tk.Label(news, text="Contenu du page news ")
+new_page_text.place (x=200, y=200)
+doc_page_text = tk.Label(document, text="Contenu du page document")
+doc_page_text.place (x=200, y=200)
+exp_page_text = tk.Label(exp, text="Contenu du page Expences ")
+exp_page_text.place (x=200, y=200)
+setting_page_text = tk.Label(setting, text="Contenu du page ")
+setting_page_text.place (x=200, y=200)
 r.mainloop()
