@@ -103,4 +103,4 @@ search_zone = tk.Entry(r)
 search_zone.place(x=1200, y=117)
 result_label = tk.Label(r, text="")
 result_label.place(x=0, y=10)
-r.mainloop()
+r.mainloop()# new
