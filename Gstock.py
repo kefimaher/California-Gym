@@ -5,11 +5,39 @@ r = tk.Tk()
 r.title('Stock Net')
 
 def item_visibility():
- settings.place(x=400, y=145)
- items.place(x=1500, y=800)
-def settings_visibility():
- settings.place(x=1500, y=800)
  items.place(x=400, y=145)
+ setting.place(x=1500, y=800)
+ news.place(x=1500, y=800)
+ document.place(x=1500, y=800)
+ exp.place(x=1500, y=800)
+def settings_visibility():
+ setting.place(x=400, y=145)
+ items.place(x=1500, y=800)
+ news.place(x=1500, y=800)
+ document.place(x=1500, y=800)
+ exp.place(x=1500, y=800)
+
+
+def news_visibility():
+ news.place(x=400, y=145)
+ setting.place(x=1500, y=800)
+ items.place(x=1500, y=800)
+ document.place(x=1500, y=800)
+ exp.place(x=1500, y=800)
+def document_visibility():
+ news.place(x=1500, y=800)
+ setting.place(x=1500, y=800)
+ items.place(x=1500, y=800)
+ document.place(x=400, y=145)
+ exp.place(x=1500, y=800)
+def exp_visibility():
+ news.place(x=1500, y=800)
+ setting.place(x=1500, y=800)
+ items.place(x=1500, y=800)
+ document.place(x=1500, y=800)
+ exp.place(x=400, y=145)
+
+
 
 canvas = tk.Canvas(r, width=1500, height=800, background='grey')
 # line
@@ -44,18 +72,28 @@ test2.place(x=550, y=113)
 items = tk.Button(r, text='Items List', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=item_visibility)
 items.place(x=1, y=180)
 #Button New items : ajouter un produit dans la table (id,image,nom,prix,quantite)
-news = tk.Button(r, text='New Items', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white")
+news = tk.Button(r, text='New Items', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=news_visibility)
 news.place(x=1, y=230)
 #Tout les fisher
-document = tk.Button(r, text='Document', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white")
+document = tk.Button(r, text='Document', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=document_visibility)
 document.place(x=1, y=280)
 #Tout les entrant et sorant
-exp = tk.Button(r, text='Expences', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white")
-exp .place(x=1, y=330)
+exp = tk.Button(r, text='Expences', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=exp_visibility)
+exp.place(x=1, y=330)
 #Modifer
 setting = tk.Button(r, text='Setting', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=settings_visibility)
 setting.place(x=1, y=380)
-settings = tk.Frame(canvas, width=1500, height=800, background='#B69DDC')
+#button links
+setting = tk.Frame(canvas, width=1500, height=800, background='red')
 items = tk.Frame(canvas, width=1500, height=800, background='grey')
+exp  = tk.Frame(canvas, width=1500, height=800, background='red')
+document = tk.Frame(canvas, width=1500, height=800, background='green')
+news = tk.Frame(canvas, width=1500, height=800, background='black')
+
+label = tk.Label(setting, text="Page setting ")
+label.place (x=200, y=200)
+
+
+
 #last save
 r.mainloop()
