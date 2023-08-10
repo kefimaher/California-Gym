@@ -3,6 +3,7 @@ from PIL import ImageTk, Image
 r = tk.Tk()
 # Titre du page
 r.title('Stock Net')
+#les lien des page
 def item_visibility():
  items.place(x=400, y=145)
  setting.place(x=1500, y=800)
@@ -33,6 +34,10 @@ def exp_visibility():
  items.place(x=1500, y=800)
  document.place(x=1500, y=800)
  exp.place(x=400, y=145)
+#button search
+def on_submit():
+    entered_text = search_zone.get()
+    result_label.config(text="Vous avez saisi : " + entered_text)
 canvas = tk.Canvas(r, width=1500, height=800, background='grey')
 # line
 canvas.create_line(400, 0, 400, 800)
@@ -53,7 +58,7 @@ canvas.pack()
 logout = tk.Button(r, text='Log out', width=10, command=r.destroy, background="white", fg="#683FA9")
 logout.place(x=1380, y=10)
 # button name + width
-search = tk.Button(r, text='Search', width=10, background="#683FA9", fg="white")
+search = tk.Button(r, text='Search', width=10, background="#683FA9", fg="white", command=on_submit)
 search.place(x=1380, y=113)
 # button name + width
 test1 = tk.Button(r, text='test1', width=10, background="#683FA9", fg="white")
@@ -93,4 +98,9 @@ exp_page_text = tk.Label(exp, text="Contenu du page Expences ", font=("Arial", 2
 exp_page_text.place (x=0, y=10 )
 setting_page_text = tk.Label(setting, text="Contenu du page setting", font=("Arial", 20), fg="#683FA9", background="grey")
 setting_page_text.place(x=0, y=10)
+#serach zone button
+search_zone = tk.Entry(r)
+search_zone.place(x=1200, y=117)
+result_label = tk.Label(r, text="")
+result_label.place(x=0, y=10)
 r.mainloop()
