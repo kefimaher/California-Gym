@@ -38,6 +38,12 @@ def exp_visibility():
 def on_submit():
     entered_text = search_zone.get()
     result_label.config(text="Vous avez saisi : " + entered_text)
+    search_zone.delete(0, "end")
+    search_zone.insert(0, "Enter text here")
+def on_entry_click(event):
+    if search_zone.get() == "Enter text here":
+        search_zone.delete(0, "end")  # Delete current text in the entry
+#canvas
 canvas = tk.Canvas(r, width=1500, height=800, background='grey')
 # line
 canvas.create_line(400, 0, 400, 800)
@@ -73,7 +79,6 @@ items.place(x=1, y=180)
 #Button New items : ajouter un produit dans la table (id,image,nom,prix,quantite)
 news = tk.Button(r, text='New Items', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=news_visibility)
 news.place(x=1, y=230)
-#Tout les fisher
 document = tk.Button(r, text='Document', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=document_visibility)
 document.place(x=1, y=280)
 #Tout les entrant et sorant
@@ -82,25 +87,29 @@ exp.place(x=1, y=330)
 #Modifer
 setting = tk.Button(r, text='Setting', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=settings_visibility)
 setting.place(x=1, y=380)
-#button links
-setting = tk.Frame(canvas, width=1500, height=800, background='grey')
-items = tk.Frame(canvas, width=1500, height=800, background='grey')
-exp  = tk.Frame(canvas, width=1500, height=800, background='grey')
-document = tk.Frame(canvas, width=1500, height=800, background='grey')
-news = tk.Frame(canvas, width=1500, height=800, background='grey')
-items_page_text = tk.Label(items, text="Contenu du page items ", font=("Arial", 20), fg="#683FA9", background="grey")
+#les pages
+setting = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
+items = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
+exp  = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
+document = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
+news = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
+items_page_text = tk.Label(items, text="Contenu du page items ", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 items_page_text.place (x=0, y=10)
-new_page_text = tk.Label(news, text="Contenu du page news ", font=("Arial", 20), fg="#683FA9", background="grey")
+new_page_text = tk.Label(news, text="Contenu du page news ", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 new_page_text.place (x=0, y=10)
-doc_page_text = tk.Label(document, text="Contenu du page document", font=("Arial", 20), fg="#683FA9", background="grey")
+doc_page_text = tk.Label(document, text="Contenu du page document", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 doc_page_text.place (x=0, y=10 )
-exp_page_text = tk.Label(exp, text="Contenu du page Expences ", font=("Arial", 20), fg="#683FA9", background="grey")
+exp_page_text = tk.Label(exp, text="Contenu du page Expences ", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 exp_page_text.place (x=0, y=10 )
-setting_page_text = tk.Label(setting, text="Contenu du page setting", font=("Arial", 20), fg="#683FA9", background="grey")
+setting_page_text = tk.Label(setting, text="Contenu du page setting", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 setting_page_text.place(x=0, y=10)
 #serach zone button
 search_zone = tk.Entry(r)
+search_zone.insert(0, "Enter text here")
 search_zone.place(x=1200, y=117)
 result_label = tk.Label(r, text="")
 result_label.place(x=0, y=10)
-r.mainloop()# new
+search_zone.bind("<FocusIn>", on_entry_click)
+
+r.mainloop()
+
