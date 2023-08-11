@@ -4,20 +4,30 @@ r = tk.Tk()
 # Titre du page
 r.title('Stock Net')
 #les lien des page
+def dashbroad_visibility():
+ dashbroad.place(x=400, y=145)
+ setting.place(x=1500, y=800)
+ items.place(x=1500, y=800)
+ news.place(x=1500, y=800)
+ document.place(x=1500, y=800)
+ exp.place(x=1500, y=800)
 def item_visibility():
  items.place(x=400, y=145)
  setting.place(x=1500, y=800)
+ dashbroad.place(x=1500, y=800)
  news.place(x=1500, y=800)
  document.place(x=1500, y=800)
  exp.place(x=1500, y=800)
 def settings_visibility():
  setting.place(x=400, y=145)
+ dashbroad.place(x=1500, y=800)
  items.place(x=1500, y=800)
  news.place(x=1500, y=800)
  document.place(x=1500, y=800)
  exp.place(x=1500, y=800)
 def news_visibility():
  news.place(x=400, y=145)
+ dashbroad.place(x=1500, y=800)
  setting.place(x=1500, y=800)
  items.place(x=1500, y=800)
  document.place(x=1500, y=800)
@@ -28,12 +38,14 @@ def document_visibility():
  items.place(x=1500, y=800)
  document.place(x=400, y=145)
  exp.place(x=1500, y=800)
+ dashbroad.place(x=1500, y=800)
 def exp_visibility():
  news.place(x=1500, y=800)
  setting.place(x=1500, y=800)
  items.place(x=1500, y=800)
  document.place(x=1500, y=800)
  exp.place(x=400, y=145)
+ dashbroad.place(x=1500, y=800)
 #button search
 def on_submit():
     entered_text = search_zone.get()
@@ -74,7 +86,7 @@ test2 = tk.Button(r, text='test2', width=10, background="#683FA9", fg="white")
 test2.place(x=550, y=113)
 # button navbar a gauche vertical
 #dashbroad
-dashbroad = tk.Button(r, text='Dashbroad', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white")
+dashbroad = tk.Button(r, text='Dashbroad', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=dashbroad_visibility)
 dashbroad.place(x=1, y=180)
 #Item list : afficher un page contien la list des produit dans la table (id,image,nom,prix,quantite)
 items = tk.Button(r, text='Items List', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=item_visibility)
@@ -98,7 +110,7 @@ exp  = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
 document = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
 news = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
 #contenu du chaque page
-dashbroad_text = tk.Label(dashbroad, text="Contenu du page items ", font=("Arial", 20), fg="#683FA9", background="red")
+dashbroad_text = tk.Label(dashbroad, text="Contenu tableau du broad ", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 dashbroad_text.place (x=5, y=10)
 items_page_text = tk.Label(items, text="Contenu du page items ", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 items_page_text.place (x=5, y=10)
