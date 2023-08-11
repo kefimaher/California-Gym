@@ -1,4 +1,5 @@
 import tkinter as tk
+import webbrowser
 from PIL import ImageTk, Image
 r = tk.Tk()
 # Titre du page
@@ -133,5 +134,18 @@ search_zone.bind("<FocusIn>", on_entry_click)
 #footer du page
 footer_page_text = tk.Label(canvas, text="This application Devlopped by Kefi Maher using Python 3.8.10 ", font=("Arial", 9), fg="white", background="#3E4146")
 footer_page_text.place(x=5, y=770)
+#page new items
+
+
+options = ["Option 1", "Option 2", "Option 3", "Option 4"]
+liste = tk.Listbox(canvas)
+for option in options:
+    liste.insert(tk.END, option)
+liste.pack(padx=200, pady=200)
+
+
+
+
+
 r.mainloop()
 
