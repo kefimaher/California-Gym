@@ -116,7 +116,7 @@ dashbroad_text = tk.Label(dashbroad, text="Contenu tableau du broad ", font=("Ar
 dashbroad_text.place (x=5, y=10)
 items_page_text = tk.Label(items, text="Contenu du page items ", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 items_page_text.place (x=5, y=10)
-new_page_text = tk.Label(news, text="Contenu du page news ", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
+new_page_text = tk.Label(news, text="Contenu du page news ", font=("Arial", 24), fg="#683FA9", background="#BBBBBB")
 new_page_text.place (x=5, y=10)
 doc_page_text = tk.Label(document, text="Contenu du page document", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 doc_page_text.place (x=5, y=10 )
@@ -135,17 +135,13 @@ search_zone.bind("<FocusIn>", on_entry_click)
 footer_page_text = tk.Label(canvas, text="This application Devlopped by Kefi Maher using Python 3.8.10 ", font=("Arial", 9), fg="white", background="#3E4146")
 footer_page_text.place(x=5, y=770)
 #page new items
-
-
+#list des option
+text1 = tk.Label(news, text="Ajouter un nouveau produit :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
+text1.place(x=300, y=100)
 options = ["Option 1", "Option 2", "Option 3", "Option 4"]
-liste = tk.Listbox(canvas)
+liste = tk.Listbox(news)
 for option in options:
     liste.insert(tk.END, option)
-liste.pack(padx=200, pady=200)
-
-
-
-
-
+liste.place(x=350, y=180)
 r.mainloop()
 
