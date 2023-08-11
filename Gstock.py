@@ -104,6 +104,7 @@ setting = tk.Button(r, text='Setting', width=46, background="#3E4146", fg="white
 setting.place(x=1, y=700)
 #les pages
 dashbroad = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
+dashbroad.place(x=400, y=145)
 setting = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
 items = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
 exp  = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
