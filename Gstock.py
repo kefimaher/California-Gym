@@ -138,9 +138,10 @@ footer_page_text.place(x=5, y=770)
 #list des option
 text1 = tk.Label(news, text="Ajouter un nouveau produit :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
 text1.place(x=300, y=100)
-options = ["Option 1", "Option 2", "Option 3", "Option 4"]
+options = ["Fraises à métaux", "Abrasifs", "Vis", "VISSEUSE électrique", "Colles adhésifs", "Outils pneumatiques", "Scies circulaires", "Ponceuses"]
 liste = tk.Listbox(news)
-for option in options:
+for option in\
+        options:
     liste.insert(tk.END, option)
 liste.place(x=350, y=180)
 r.mainloop()
