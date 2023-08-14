@@ -52,9 +52,9 @@ def on_submit():
     entered_text = search_zone.get()
     result_label.config(text="Vous avez saisi : " + entered_text)
     search_zone.delete(0, "end")
-    search_zone.insert(0, "Search")
+    search_zone.insert(0, "chercher un produit")
 def on_entry_click(event):
-    if search_zone.get() == "Search":
+    if search_zone.get() == "chercher un produit":
         search_zone.delete(0, "end")  # Delete current text in the entry
 #canvas
 canvas = tk.Canvas(r, width=1500, height=800, background='grey')
@@ -123,7 +123,7 @@ setting_page_text = tk.Label(setting, text="Contenu du page setting", font=("Ari
 setting_page_text.place(x=5, y=10)
 #serach zone button
 search_zone = tk.Entry(r)
-search_zone.insert(0, "Search")
+search_zone.insert(10, "chercher un produit")
 search_zone.place(x=1200, y=117)
 result_label = tk.Label(r, text="")
 result_label.place(x=0, y=10)
