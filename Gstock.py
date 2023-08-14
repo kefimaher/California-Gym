@@ -74,7 +74,7 @@ Title = canvas.create_text(200, 40, text="Stock Net", fill="white", font='Helvet
 # y = canvas.create_rectangle(400, 800, 1500, 146, fill="grey")
 canvas.pack()
 # button name + width
-logout = tk.Button(r, text='Log out', width=10, command=r.destroy, background="white", fg="#683FA9")
+logout = tk.Button(r, text='Déconnexion', width=10, command=r.destroy, background="white", fg="#683FA9")
 logout.place(x=1380, y=10)
 # button name + width
 search = tk.Button(r, text='OK', width=10, background="#683FA9", fg="white", command=on_submit)
@@ -87,21 +87,18 @@ test2 = tk.Button(r, text='test2', width=10, background="#683FA9", fg="white")
 test2.place(x=550, y=113)
 # button navbar a gauche vertical
 #dashbroad
-dashbroad = tk.Button(r, text='Dashbroad', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=dashbroad_visibility)
+dashbroad = tk.Button(r, text='Tableau de bord', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=dashbroad_visibility)
 dashbroad.place(x=1, y=180)
 #Item list : afficher un page contien la list des produit dans la table (id,image,nom,prix,quantite)
-items = tk.Button(r, text='Items List', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=item_visibility)
+items = tk.Button(r, text='Liste des produits', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=item_visibility)
 items.place(x=1, y=230)
 #Button New items : ajouter un produit dans la table (id,image,nom,prix,quantite)
-news = tk.Button(r, text='New Items', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=news_visibility)
+news = tk.Button(r, text='Faire une commande', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=news_visibility)
 news.place(x=1, y=280)
-document = tk.Button(r, text='Document', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=document_visibility)
+document = tk.Button(r, text='Facture', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=document_visibility)
 document.place(x=1, y=330)
-#Tout les entrant et sorant
-exp = tk.Button(r, text='Expences', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=exp_visibility)
-exp.place(x=1, y=380)
 #Modifer
-setting = tk.Button(r, text='Setting', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=settings_visibility)
+setting = tk.Button(r, text='Parametre', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=settings_visibility)
 setting.place(x=1, y=700)
 #les pages
 dashbroad = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
