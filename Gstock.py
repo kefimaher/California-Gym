@@ -118,7 +118,7 @@ dashbroad_text.place (x=5, y=10)
 items_page_text = tk.Label(items, text="Contenu du page items ", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 items_page_text.place (x=5, y=10)
 new_page_text = tk.Label(news, text="Contenu du page news ", font=("Arial", 24), fg="#683FA9", background="#BBBBBB")
-new_page_text.place (x=5, y=10)
+new_page_text.place (x=400, y=10)
 doc_page_text = tk.Label(document, text="Contenu du page document", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 doc_page_text.place (x=5, y=10 )
 exp_page_text = tk.Label(exp, text="Contenu du page export ", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
@@ -137,12 +137,14 @@ footer_page_text = tk.Label(canvas, text="This application Devlopped by Kefi Mah
 footer_page_text.place(x=5, y=770)
 #page new items
 #list des option
-text1 = tk.Label(news, text="Ajouter un nouveau produit :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
-text1.place(x=300, y=100)
-options = ["Fraises à métaux", "Abrasifs", "Vis", "VISSEUSE électrique", "Colles adhésifs", "Outils pneumatiques", "Scies circulaires", "Ponceuses"]
-liste = tk.Listbox(news, bg="#BBBBBB", fg="black", width=70)
-liste.insert(tk.END, options)
-
+produitajouter = tk.Label(news, text="Produit ajouté en inventaire :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
+produitajouter.place(x=3, y=140)
+quantite = tk.Label(news, text="Quantite :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
+quantite.place(x=500, y=140)
+prix = tk.Label(news, text="Prix:", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
+prix.place(x=850, y=140)
+options = ["Fraises à métaux", "Abrasifs", "Vis", "VISSEUSE","Electrique", "Colles adhésifs", "Outils pneumatiques", "Scies circulaires", "Ponceuses", "Autre"]
+liste = tk.Listbox(news, bg="#BBBBBB", fg="black", width=35, font=("Arial", 13))
 for option in\
         options:
     liste.insert(tk.END, option)
