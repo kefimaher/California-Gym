@@ -86,18 +86,22 @@ test1.place(x=420, y=113)
 test2 = tk.Button(r, text='test2', width=10, background="#683FA9", fg="white")
 test2.place(x=550, y=113)
 # button navbar a gauche vertical
-#dashbroad
+#tableau du bord
 dashbroad = tk.Button(r, text='Tableau de bord', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=dashbroad_visibility)
 dashbroad.place(x=1, y=180)
 #Item list : afficher un page contien la list des produit dans la table (id,image,nom,prix,quantite)
 items = tk.Button(r, text='Liste des produits', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=item_visibility)
 items.place(x=1, y=230)
 #Button New items : ajouter un produit dans la table (id,image,nom,prix,quantite)
-news = tk.Button(r, text='Importer / Exporter', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=news_visibility)
+news = tk.Button(r, text='Importer', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=news_visibility)
 news.place(x=1, y=280)
+#export
+exp = tk.Button(r, text='Exporter', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=exp_visibility)
+exp.place(x=1, y=330)
+#historique
 document = tk.Button(r, text='Historique', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=document_visibility)
-document.place(x=1, y=330)
-#Modifer
+document.place(x=1, y=380)
+#parametre
 setting = tk.Button(r, text='Parametre', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=settings_visibility)
 setting.place(x=1, y=700)
 #les pages
@@ -117,7 +121,7 @@ new_page_text = tk.Label(news, text="Contenu du page news ", font=("Arial", 24),
 new_page_text.place (x=5, y=10)
 doc_page_text = tk.Label(document, text="Contenu du page document", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 doc_page_text.place (x=5, y=10 )
-exp_page_text = tk.Label(exp, text="Contenu du page Expences ", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
+exp_page_text = tk.Label(exp, text="Contenu du page export ", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 exp_page_text.place (x=5, y=10 )
 setting_page_text = tk.Label(setting, text="Contenu du page setting", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 setting_page_text.place(x=5, y=10)
