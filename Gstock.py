@@ -96,7 +96,7 @@ items.place(x=1, y=230)
 news = tk.Button(r, text='Importer', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=news_visibility)
 news.place(x=1, y=280)
 #export
-exp = tk.Button(r, text='Exporter', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=exp_visibility)
+exp = tk.Button(r, text='Exporter', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white")
 exp.place(x=1, y=330)
 #historique
 document = tk.Button(r, text='Historique', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=document_visibility)
@@ -140,10 +140,12 @@ footer_page_text.place(x=5, y=770)
 text1 = tk.Label(news, text="Ajouter un nouveau produit :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
 text1.place(x=300, y=100)
 options = ["Fraises à métaux", "Abrasifs", "Vis", "VISSEUSE électrique", "Colles adhésifs", "Outils pneumatiques", "Scies circulaires", "Ponceuses"]
-liste = tk.Listbox(news)
+liste = tk.Listbox(news, bg="#BBBBBB", fg="black", width=70)
+liste.insert(tk.END, options)
+
 for option in\
         options:
     liste.insert(tk.END, option)
-liste.place(x=350, y=180)
+liste.place(x=1, y=180)
 r.mainloop()
 
