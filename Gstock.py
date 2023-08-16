@@ -117,7 +117,7 @@ dashbroad_text = tk.Label(dashbroad, text="Contenu tableau du broad ", font=("Ar
 dashbroad_text.place (x=5, y=10)
 items_page_text = tk.Label(items, text="Contenu du page items ", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 items_page_text.place (x=5, y=10)
-new_page_text = tk.Label(news, text="Contenu du page news ", font=("Arial", 24), fg="#683FA9", background="#BBBBBB")
+new_page_text = tk.Label(news, text="Ajouter un produit / matreille", font=("Arial", 24), fg="#683FA9", background="#BBBBBB")
 new_page_text.place (x=400, y=10)
 doc_page_text = tk.Label(document, text="Contenu du page document", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 doc_page_text.place (x=5, y=10 )
@@ -129,7 +129,7 @@ setting_page_text.place(x=5, y=10)
 search_zone = tk.Entry(r)
 search_zone.insert(10, "chercher un produit")
 search_zone.place(x=1200, y=117)
-result_label = tk.Label(r, text="")
+result_label = tk.Label(r, text="ZFQVQDVQDV")
 result_label.place(x=0, y=10)
 search_zone.bind("<FocusIn>", on_entry_click)
 #footer du page
@@ -137,17 +137,32 @@ footer_page_text = tk.Label(canvas, text="This application Devlopped by Kefi Mah
 footer_page_text.place(x=5, y=770)
 #page new items
 #list des option
+#ajouter produit
 produitajouter = tk.Label(news, text="Produit ajouté en inventaire :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
 produitajouter.place(x=3, y=140)
+#quantite
 quantite = tk.Label(news, text="Quantite :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
 quantite.place(x=500, y=140)
-prix = tk.Label(news, text="Prix:", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
+#prix
+prix = tk.Label(news, text="Prix pour seul:", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
 prix.place(x=850, y=140)
+#list option
 options = ["Fraises à métaux", "Abrasifs", "Vis", "VISSEUSE","Electrique", "Colles adhésifs", "Outils pneumatiques", "Scies circulaires", "Ponceuses", "Autre"]
 liste = tk.Listbox(news, bg="#BBBBBB", fg="black", width=35, font=("Arial", 13))
 for option in\
         options:
     liste.insert(tk.END, option)
 liste.place(x=1, y=180)
+#search zone pour quantite
+quantitezone = tk.Entry(news)
+quantitezone.insert(10, "fffff")
+quantitezone.place(x=500, y=180)
+#search zone pour prix
+prixezone = tk.Entry(news)
+prixezone.insert(10, "fffff")
+prixezone.place(x=850, y=180)
+#butoon ajouter
+produitajouterbutton = tk.Button(news, text='Ajouter', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white")
+produitajouterbutton.place(x=500, y=500)
 r.mainloop()
 
