@@ -148,10 +148,10 @@ produitajouter.place(x=3, y=140)
 quantite = tk.Label(news, text="Quantite :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
 quantite.place(x=500, y=140)
 #prix
-prix = tk.Label(news, text="Prix pour seul:", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
+prix = tk.Label(news, text="Prix pour un seul:", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
 prix.place(x=850, y=140)
 #list option
-options = ["Fraises à métaux", "Abrasifs", "Vis", "VISSEUSE","Electrique", "Colles adhésifs", "Outils pneumatiques", "Scies circulaires", "Ponceuses", "Autre"]
+options = ["Fraises à métaux", "Abrasifs", "Vis", "VISSEUSE","Electrique", "Colles adhésifs", "Outils pneumatiques", "Scies circulaires", "Ponceuses"]
 liste = tk.Listbox(news, bg="#BBBBBB", fg="black", width=35, font=("Arial", 13))
 for option in\
         options:
@@ -159,11 +159,11 @@ for option in\
 liste.place(x=1, y=180)
 #search zone pour quantite
 quantitezone = tk.Entry(news)
-quantitezone.insert(10, "fffff")
+quantitezone.insert(10, "")
 quantitezone.place(x=500, y=180)
 #search zone pour prix
 prixezone = tk.Entry(news)
-prixezone.insert(10, "fffff")
+prixezone.insert(10, "")
 prixezone.place(x=850, y=180)
 #butoon ajouter
 produitajouterbutton = tk.Button(news, text='Ajouter', width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white")
@@ -171,5 +171,12 @@ produitajouterbutton.place(x=200, y=600)
 #button annuler
 produitannulerbutton = tk.Button(news, text='Annuler', width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white", command=reset)
 produitannulerbutton.place(x=600, y=600)
+#button autre
+autrebutton = tk.Button(news, text='Autre produit / matreille ', width=20, background="#3E4146", fg="white", activebackground="#3D0E89", activeforeground="white")
+autrebutton.place(x=500, y=300)
+#text zone pour autre
+autre = tk.Entry(news)
+autre.insert(10, "")
+autre.place(x=750, y=305)
 r.mainloop()
 
