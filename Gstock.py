@@ -162,7 +162,10 @@ prixezone = tk.Entry(news)
 prixezone.insert(10, "fffff")
 prixezone.place(x=850, y=180)
 #butoon ajouter
-produitajouterbutton = tk.Button(news, text='Ajouter', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white")
-produitajouterbutton.place(x=500, y=500)
+produitajouterbutton = tk.Button(news, text='Ajouter', width=30, background="#683FA9", fg="white", highlightbackground="#683FA9", activebackground="red", activeforeground="white")
+produitajouterbutton.place(x=200, y=600)
+#button annuler
+produitannulerbutton = tk.Button(news, text='Annuler', width=30, background="#683FA9", fg="white", highlightbackground="#683FA9", activebackground="red", activeforeground="white")
+produitannulerbutton.place(x=600, y=600)
 r.mainloop()
 
