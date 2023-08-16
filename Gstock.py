@@ -144,18 +144,18 @@ footer_page_text.place(x=5, y=770)
 #list des option
 #ajouter produit
 produitajouter = tk.Label(news, text="Produit ajouté en inventaire :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
-produitajouter.place(x=3, y=140)
+produitajouter.place(x=5, y=140)
 #quantite
-quantite = tk.Label(news, text="Quantite :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
-quantite.place(x=500, y=140)
+quantite = tk.Label(news, text="Quantite:", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
+quantite.place(x=350, y=140)
 #prix
 prix = tk.Label(news, text="Prix pour un seul:", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
-prix.place(x=850, y=140)
+prix.place(x=600, y=140)
 #list option
 options = ["Fraises à métaux", "Abrasifs", "Vis", "VISSEUSE","Electrique", "Colles adhésifs", "Outils pneumatiques", "Scies circulaires", "Ponceuses"]
-liste = tk.Listbox(news, bg="#BBBBBB", fg="black", width=35, font=("Arial", 13))
+liste = tk.Listbox(news, bg="#BBBBBB", fg="black", width=20, font=("Arial", 13))
 for option in\
-        options:
+        options:s
     liste.insert(tk.END, option)
 liste.place(x=1, y=180)
 #search zone pour quantite
