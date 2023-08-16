@@ -60,6 +60,7 @@ def on_entry_click(event):
 def reset():
     quantitezone.delete(0, tk.END)
     prixezone.delete(0, tk.END)
+    autre.delete(0, tk.END)
 #canvas
 canvas = tk.Canvas(r, width=1500, height=800, background='grey')
 # line
