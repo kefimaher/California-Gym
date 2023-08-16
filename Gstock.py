@@ -56,6 +56,10 @@ def on_submit():
 def on_entry_click(event):
     if search_zone.get() == "chercher un produit":
         search_zone.delete(0, "end")  # Delete current text in the entry
+#button reset
+def reset():
+    quantitezone.delete(0, tk.END)
+    prixezone.delete(0, tk.END)
 #canvas
 canvas = tk.Canvas(r, width=1500, height=800, background='grey')
 # line
@@ -162,10 +166,10 @@ prixezone = tk.Entry(news)
 prixezone.insert(10, "fffff")
 prixezone.place(x=850, y=180)
 #butoon ajouter
-produitajouterbutton = tk.Button(news, text='Ajouter', width=30, background="#683FA9", fg="white", highlightbackground="#683FA9", activebackground="red", activeforeground="white")
+produitajouterbutton = tk.Button(news, text='Ajouter', width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white")
 produitajouterbutton.place(x=200, y=600)
 #button annuler
-produitannulerbutton = tk.Button(news, text='Annuler', width=30, background="#683FA9", fg="white", highlightbackground="#683FA9", activebackground="red", activeforeground="white")
+produitannulerbutton = tk.Button(news, text='Annuler', width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white", command=reset)
 produitannulerbutton.place(x=600, y=600)
 r.mainloop()
 
