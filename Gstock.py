@@ -143,14 +143,17 @@ footer_page_text.place(x=5, y=770)
 #page new items
 #list des option
 #ajouter produit
-produitajouter = tk.Label(news, text="Produit ajouté en inventaire :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
+produitajouter = tk.Label(news, text="Produit ajouté en inventaire ", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
 produitajouter.place(x=5, y=140)
 #quantite
-quantite = tk.Label(news, text="Quantite:", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
+quantite = tk.Label(news, text="Quantite", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
 quantite.place(x=350, y=140)
 #prix
-prix = tk.Label(news, text="Prix pour un seul:", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
+prix = tk.Label(news, text="Prix", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
 prix.place(x=600, y=140)
+#numero du facture
+numerofacture = tk.Label(news, text="Numero du facture", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
+numerofacture.place(x=800, y=140)
 #list option
 options = ["Fraises à métaux", "Abrasifs", "Vis", "VISSEUSE","Electrique", "Colles adhésifs", "Outils pneumatiques", "Scies circulaires", "Ponceuses"]
 liste = tk.Listbox(news, bg="#BBBBBB", fg="black", width=20, font=("Arial", 13))
@@ -158,14 +161,18 @@ for option in\
         options:
     liste.insert(tk.END, option)
 liste.place(x=1, y=180)
-#search zone pour quantite
+#quantite
 quantitezone = tk.Entry(news)
 quantitezone.insert(10, "")
-quantitezone.place(x=500, y=180)
-#search zone pour prix
+quantitezone.place(x=330, y=180)
+#prix
 prixezone = tk.Entry(news)
 prixezone.insert(10, "")
-prixezone.place(x=850, y=180)
+prixezone.place(x=560, y=180)
+#numro fcature
+numerofacture = tk.Entry(news)
+numerofacture.insert(10, "")
+numerofacture.place(x=820, y=180)
 #butoon ajouter
 produitajouterbutton = tk.Button(news, text='Ajouter', width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white")
 produitajouterbutton.place(x=200, y=600)
