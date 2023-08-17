@@ -154,19 +154,18 @@ prix.place(x=600, y=140)
 #numero du facture
 numerofacture = tk.Label(news, text="Numero du facture", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
 numerofacture.place(x=800, y=140)
-
 #quantite
 quantitezone = tk.Entry(news)
 quantitezone.insert(10, "")
-quantitezone.place(x=330, y=180)
+quantitezone.place(x=330, y=150)
 #prix
 prixezone = tk.Entry(news)
 prixezone.insert(10, "")
-prixezone.place(x=560, y=180)
+prixezone.place(x=330, y=220)
 #numro fcature
 numerofacture = tk.Entry(news)
 numerofacture.insert(10, "")
-numerofacture.place(x=820, y=180)
+numerofacture.place(x=330, y=290)
 #butoon ajouter
 produitajouterbutton = tk.Button(news, text='Ajouter', width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white")
 produitajouterbutton.place(x=200, y=600)
