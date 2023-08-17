@@ -154,13 +154,7 @@ prix.place(x=600, y=140)
 #numero du facture
 numerofacture = tk.Label(news, text="Numero du facture", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
 numerofacture.place(x=800, y=140)
-#list option
-options = ["Fraises à métaux", "Abrasifs", "Vis", "VISSEUSE","Electrique", "Colles adhésifs", "Outils pneumatiques", "Scies circulaires", "Ponceuses"]
-liste = tk.Listbox(news, bg="#BBBBBB", fg="black", width=20, font=("Arial", 13))
-for option in\
-        options:
-    liste.insert(tk.END, option)
-liste.place(x=1, y=180)
+
 #quantite
 quantitezone = tk.Entry(news)
 quantitezone.insert(10, "")
