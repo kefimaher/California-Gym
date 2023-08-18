@@ -122,8 +122,8 @@ dashbroad_text = tk.Label(dashbroad, text="Contenu tableau du broad ", font=("Ar
 dashbroad_text.place (x=5, y=10)
 items_page_text = tk.Label(items, text="Contenu du page items ", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 items_page_text.place (x=5, y=10)
-new_page_text = tk.Label(news, text="Ajouter un produit / matreille", font=("Arial", 24), fg="#683FA9", background="#BBBBBB")
-new_page_text.place (x=400, y=10)
+new_page_text = tk.Label(news, text="Ajouter un nouvelle produit", font=("Arial", 24), fg="#683FA9", background="#BBBBBB")
+new_page_text.place (x=450, y=15)
 doc_page_text = tk.Label(document, text="Contenu du page document", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 doc_page_text.place (x=5, y=10 )
 exp_page_text = tk.Label(exp, text="Contenu du page export ", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
@@ -143,33 +143,33 @@ footer_page_text.place(x=5, y=770)
 #page new items
 #list des option
 #numero du facture
-numerofacture = tk.Label(news, text="N facture     :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
-numerofacture.place(x=50, y=150)
+numerofacture = tk.Label(news, text="N facture :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
+numerofacture.place(x=400, y=150)
 #ajouter produit
-produitajouter = tk.Label(news, text="Produit        :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
-produitajouter.place(x=50, y=200)
+produitajouter = tk.Label(news, text="Produit    :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
+produitajouter.place(x=400, y=200)
 #quantite
-quantite = tk.Label(news, text="Quantite      :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
-quantite.place(x=50, y=250)
+quantite = tk.Label(news, text="Quantite  :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
+quantite.place(x=400, y=250)
 #prix
-prix = tk.Label(news, text="Prix             :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
-prix.place(x=50, y=300)
+prix = tk.Label(news, text="Prix         :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
+prix.place(x=400, y=300)
 #numro fcature
 numerofacture = tk.Entry(news)
 numerofacture.insert(10, "")
-numerofacture.place(x=250, y=155)
+numerofacture.place(x=550, y=155)
 #produit
 autre = tk.Entry(news)
 autre.insert(10, "")
-autre.place(x=250, y=205)
+autre.place(x=550, y=205)
 #quantite
 quantitezone = tk.Entry(news)
 quantitezone.insert(10, "")
-quantitezone.place(x=250, y=255)
+quantitezone.place(x=550, y=255)
 #prix
 prixezone = tk.Entry(news)
 prixezone.insert(10, "")
-prixezone.place(x=250, y=305)
+prixezone.place(x=550, y=305)
 #butoon ajouter
 produitajouterbutton = tk.Button(news, text='Ajouter', width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white")
 produitajouterbutton.place(x=200, y=600)
