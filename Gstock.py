@@ -143,7 +143,7 @@ footer_page_text.place(x=5, y=770)
 #page new items
 #list des option
 #ajouter produit
-produitajouter = tk.Label(news, text="Produit ajouté en inventaire ", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
+produitajouter = tk.Label(news, text="Produit", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
 produitajouter.place(x=5, y=140)
 #quantite
 quantite = tk.Label(news, text="Quantite", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
@@ -172,9 +172,6 @@ produitajouterbutton.place(x=200, y=600)
 #button annuler
 produitannulerbutton = tk.Button(news, text='Annuler', width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white", command=reset)
 produitannulerbutton.place(x=600, y=600)
-#button autre
-autrebutton = tk.Button(news, text='Autre produit / matreille ', width=20, background="#3E4146", fg="white", activebackground="#3D0E89", activeforeground="white")
-autrebutton.place(x=500, y=300)
 #text zone pour autre
 autre = tk.Entry(news)
 autre.insert(10, "")
