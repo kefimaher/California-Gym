@@ -157,11 +157,11 @@ numerofacture.place(x=800, y=140)
 #quantite
 quantitezone = tk.Entry(news)
 quantitezone.insert(10, "")
-quantitezone.place(x=330, y=150)
+quantitezone.place(x=330, y=220)
 #prix
 prixezone = tk.Entry(news)
 prixezone.insert(10, "")
-prixezone.place(x=330, y=220)
+prixezone.place(x=330, y=360)
 #numro fcature
 numerofacture = tk.Entry(news)
 numerofacture.insert(10, "")
