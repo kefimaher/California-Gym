@@ -156,15 +156,19 @@ prix = tk.Label(news, text="Prix             :", font=("Arial", 18), fg="#683FA9
 prix.place(x=50, y=300)
 #numro fcature
 numerofacture = tk.Entry(news)
-numerofacture.insert(10, "fact")
+numerofacture.insert(10, "")
 numerofacture.place(x=250, y=155)
+#produit
+autre = tk.Entry(news)
+autre.insert(10, "")
+autre.place(x=250, y=205)
 #quantite
 quantitezone = tk.Entry(news)
-quantitezone.insert(10, "quantite")
+quantitezone.insert(10, "")
 quantitezone.place(x=250, y=255)
 #prix
 prixezone = tk.Entry(news)
-prixezone.insert(10, "prix")
+prixezone.insert(10, "")
 prixezone.place(x=250, y=305)
 #butoon ajouter
 produitajouterbutton = tk.Button(news, text='Ajouter', width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white")
@@ -172,9 +176,5 @@ produitajouterbutton.place(x=200, y=600)
 #button annuler
 produitannulerbutton = tk.Button(news, text='Annuler', width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white", command=reset)
 produitannulerbutton.place(x=600, y=600)
-#text zone pour autre
-autre = tk.Entry(news)
-autre.insert(10, "")
-autre.place(x=750, y=305)
 r.mainloop()
 
