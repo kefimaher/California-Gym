@@ -142,30 +142,30 @@ footer_page_text = tk.Label(canvas, text="This application Devlopped by Kefi Mah
 footer_page_text.place(x=5, y=770)
 #page new items
 #list des option
-#ajouter produit
-produitajouter = tk.Label(news, text="Produit", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
-produitajouter.place(x=5, y=140)
-#quantite
-quantite = tk.Label(news, text="Quantite", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
-quantite.place(x=350, y=140)
-#prix
-prix = tk.Label(news, text="Prix", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
-prix.place(x=600, y=140)
 #numero du facture
-numerofacture = tk.Label(news, text="Numero du facture", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
-numerofacture.place(x=800, y=140)
+numerofacture = tk.Label(news, text="N facture     :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
+numerofacture.place(x=50, y=150)
+#ajouter produit
+produitajouter = tk.Label(news, text="Produit        :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
+produitajouter.place(x=50, y=200)
 #quantite
-quantitezone = tk.Entry(news)
-quantitezone.insert(10, "")
-quantitezone.place(x=330, y=220)
+quantite = tk.Label(news, text="Quantite      :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
+quantite.place(x=50, y=250)
 #prix
-prixezone = tk.Entry(news)
-prixezone.insert(10, "")
-prixezone.place(x=330, y=360)
+prix = tk.Label(news, text="Prix             :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
+prix.place(x=50, y=150)
 #numro fcature
 numerofacture = tk.Entry(news)
 numerofacture.insert(10, "")
-numerofacture.place(x=330, y=290)
+numerofacture.place(x=330, y=200)
+#quantite
+quantitezone = tk.Entry(news)
+quantitezone.insert(10, "")
+quantitezone.place(x=330, y=250)
+#prix
+prixezone = tk.Entry(news)
+prixezone.insert(10, "")
+prixezone.place(x=330, y=300)
 #butoon ajouter
 produitajouterbutton = tk.Button(news, text='Ajouter', width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white")
 produitajouterbutton.place(x=200, y=600)
