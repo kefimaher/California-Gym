@@ -55,7 +55,6 @@ def on_submit():
     r1.place(x=10, y=150)
     r2.place(x=10, y=200)
     r3.place(x=10, y=250)
-    r0.config(entered_text)
     search_zone.delete(0, "end")
     search_zone.insert(0, "")
     news.place(x=1500, y=800)
