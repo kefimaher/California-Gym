@@ -83,13 +83,13 @@ canvas.pack()
 logout = tk.Button(r, text='Déconnexion', width=10, command=r.destroy, background="white", fg="#683FA9")
 logout.place(x=1380, y=10)
 # button name + width
-search = tk.Button(r, text='OK', width=10, background="#683FA9", fg="white", command=on_submit)
+search = tk.Button(r, text='OK', width=10, background="#683FA9", fg="white", command=on_submit, activebackground="#3D0E89", activeforeground="white")
 search.place(x=1380, y=113)
 # button name + width
-test1 = tk.Button(r, text='test1', width=10, background="#683FA9", fg="white")
+test1 = tk.Button(r, text='Test', width=10, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white")
 test1.place(x=420, y=113)
 # button name + width
-test2 = tk.Button(r, text='test2', width=10, background="#683FA9", fg="white")
+test2 = tk.Button(r, text='Test', width=10, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white")
 test2.place(x=550, y=113)
 # button navbar a gauche vertical
 #tableau du bord
@@ -123,11 +123,11 @@ dashbroad_text = tk.Label(dashbroad, text="Contenu tableau du broad ", font=("Ar
 dashbroad_text.place (x=350, y=10)
 items_page_text = tk.Label(items, text="Contenu du page items ", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 items_page_text.place (x=350, y=10)
-new_page_text = tk.Label(news, text="Ajout d'un nouveau produit", font=("Arial", 24), fg="#683FA9", background="#BBBBBB")
+new_page_text = tk.Label(news, text="Ajout d'un Nouveau Produit", font=("Arial", 24), fg="#683FA9", background="#BBBBBB")
 new_page_text.place (x=350, y=20)
 doc_page_text = tk.Label(document, text="Contenu du page document", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 doc_page_text.place (x=350, y=10 )
-exp_page_text = tk.Label(exp, text="Contenu du page export ", font=("Arial", 24), fg="#683FA9", background="#BBBBBB")
+exp_page_text = tk.Label(exp, text="Vente du Nouveau Produit.", font=("Arial", 24), fg="#683FA9", background="#BBBBBB")
 exp_page_text.place (x=350, y=20 )
 setting_page_text = tk.Label(setting, text="Contenu du page setting", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 setting_page_text.place(x=350, y=10)
@@ -139,7 +139,7 @@ result_label = tk.Label(r, text="ZFQVQDVQDV")
 result_label.place(x=0, y=10)
 search_zone.bind("<FocusIn>", on_entry_click)
 #footer du page
-footer_page_text = tk.Label(canvas, text="This application Devlopped by Kefi Maher using Python 3.8.10 ", font=("Arial", 9), fg="white", background="#3E4146")
+footer_page_text = tk.Label(canvas, text="This application Devlopped by Kefi Maher using Python 3.8.10 ", font=("Arial", 10), fg="white", background="#3E4146")
 footer_page_text.place(x=5, y=770)
 #page new items
 #list des option
@@ -177,48 +177,33 @@ produitajouterbutton.place(x=200, y=500)
 #button annuler
 produitannulerbutton = tk.Button(news, text='Annuler', width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white", command=reset)
 produitannulerbutton.place(x=600, y=500)
-
-
 #page export
-#list des option
-#numero du facture
-numerofacture = tk.Label(exp, text="N facture :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
-numerofacture.place(x=400, y=150)
 #ajouter produit
 produitajouter = tk.Label(exp, text="Produit    :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
-produitajouter.place(x=400, y=200)
+produitajouter.place(x=400, y=150)
 #quantite
 quantite = tk.Label(exp, text="Quantite  :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
-quantite.place(x=400, y=250)
+quantite.place(x=400, y=200)
 #prix
 prix = tk.Label(exp, text="Prix         :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
-prix.place(x=400, y=300)
-#numro fcature
-numerofacture = tk.Entry(exp)
-numerofacture.insert(10, "")
-numerofacture.place(x=550, y=155)
+prix.place(x=400, y=250)
 #produit
 autre = tk.Entry(exp)
 autre.insert(10, "")
-autre.place(x=550, y=205)
+autre.place(x=550, y=155)
 #quantite
 quantitezone = tk.Entry(exp)
 quantitezone.insert(10, "")
-quantitezone.place(x=550, y=255)
+quantitezone.place(x=550, y=205)
 #prix
 prixezone = tk.Entry(exp)
 prixezone.insert(10, "")
-prixezone.place(x=550, y=305)
+prixezone.place(x=550, y=255)
 #butoon ajouter
 produitajouterbutton = tk.Button(exp, text='Ajouter', width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white")
 produitajouterbutton.place(x=200, y=500)
 #button annuler
 produitannulerbutton = tk.Button(exp, text='Annuler', width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white", command=reset)
 produitannulerbutton.place(x=600, y=500)
-
-
-
-
-
 r.mainloop()
 
