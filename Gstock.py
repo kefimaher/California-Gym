@@ -86,7 +86,7 @@ Title = canvas.create_text(200, 40, text="Stock Net", fill="white", font='Helvet
 # y = canvas.create_rectangle(400, 800, 1500, 146, fill="grey")
 canvas.pack()
 # button name + width
-logout = tk.Button(r, text='Déconnexion', width=10, background="#683FA9", fg="white", command=r.destroy, activebackground="#FF0000", activeforeground="white")
+logout = tk.Button(r, text='Déconnexion', highlightbackground="red",  width=10, background="#683FA9", fg="white", command=r.destroy, activebackground="#FF0000", activeforeground="white")
 logout.place(x=1380, y=10)
 # button name + width
 search = tk.Button(r, text='Chercher', width=10, background="#683FA9", fg="white", command=on_submit, activebackground="#3D0E89", activeforeground="white")
@@ -137,7 +137,7 @@ new_page_text = tk.Label(news, text="Ajout d'un Nouveau Produit", font=("Arial",
 new_page_text.place (x=350, y=20)
 doc_page_text = tk.Label(document, text="Contenu du page document", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 doc_page_text.place (x=350, y=10 )
-exp_page_text = tk.Label(exp, text="Vente du Nouveau Produit.", font=("Arial", 24), fg="#683FA9", background="#BBBBBB")
+exp_page_text = tk.Label(exp, text="Vente du Nouveau Produit", font=("Arial", 24), fg="#683FA9", background="#BBBBBB")
 exp_page_text.place (x=350, y=20 )
 setting_page_text = tk.Label(setting, text="Contenu du page setting", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 setting_page_text.place(x=350, y=10)
