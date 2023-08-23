@@ -86,7 +86,7 @@ Title = canvas.create_text(200, 40, text="Stock Net", fill="white", font='Helvet
 # y = canvas.create_rectangle(400, 800, 1500, 146, fill="grey")
 canvas.pack()
 # button name + width
-logout = tk.Button(r, text='Déconnexion', width=10, command=r.destroy, background="white", fg="#683FA9")
+logout = tk.Button(r, text='Déconnexion', width=10, background="#683FA9", fg="white", command=r.destroy, activebackground="#FF0000", activeforeground="white")
 logout.place(x=1380, y=10)
 # button name + width
 search = tk.Button(r, text='Chercher', width=10, background="#683FA9", fg="white", command=on_submit, activebackground="#3D0E89", activeforeground="white")
