@@ -118,7 +118,9 @@ setting = tk.Button(r, text='Parametre', width=46, background="#3E4146", fg="whi
 setting.place(x=1, y=700)
 #les pages
 dashbroad = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
-dashbroad.place(x=400, y=145)
+#dashbroad.place(x=400, y=145)
+pagesearch = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
+pagesearch.place(x=400, y=145)
 setting = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
 items = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
 exp  = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
@@ -126,7 +128,9 @@ document = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
 news = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
 #contenu du chaque page
 dashbroad_text = tk.Label(dashbroad, text="Contenu tableau du broad ", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
-dashbroad_text.place (x=350, y=10)
+#dashbroad_text.place (x=350, y=10)
+pagesearch_label = tk.Label(pagesearch, text="Produit a recherché", font=("Arial", 24), fg="#683FA9", background="#BBBBBB")
+pagesearch_label.place (x=380, y=20)
 items_page_text = tk.Label(items, text="Contenu du page items ", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 items_page_text.place (x=350, y=10)
 new_page_text = tk.Label(news, text="Ajout d'un Nouveau Produit", font=("Arial", 24), fg="#683FA9", background="#BBBBBB")
@@ -137,13 +141,6 @@ exp_page_text = tk.Label(exp, text="Vente du Nouveau Produit.", font=("Arial", 2
 exp_page_text.place (x=350, y=20 )
 setting_page_text = tk.Label(setting, text="Contenu du page setting", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 setting_page_text.place(x=350, y=10)
-#serach zone button
-search_zone = tk.Entry(r)
-search_zone.insert(10, "chercher un produit")
-search_zone.place(x=1200, y=117)
-result_label = tk.Label(r, text="chercher un produit")
-result_label.place(x=700, y=80)
-search_zone.bind("<FocusIn>", on_entry_click)
 #footer du page
 footer_page_text = tk.Label(canvas, text="This application Devlopped by Kefi Maher using Python 3.8.10 ", font=("Arial", 10), fg="white", background="#3E4146")
 footer_page_text.place(x=5, y=770)
@@ -211,5 +208,13 @@ produitajouterbutton.place(x=200, y=500)
 #button annuler
 produitannulerbutton = tk.Button(exp, text='Annuler', width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white", command=reset)
 produitannulerbutton.place(x=600, y=500)
+#page rechrcher
+#serach zone button
+search_zone = tk.Entry(r)
+search_zone.insert(10, "chercher un produit")
+search_zone.place(x=1200, y=117)
+result_label = tk.Label(pagesearch, text="chercher un produit")
+result_label.place(x=10, y=150)
+search_zone.bind("<FocusIn>", on_entry_click)
 r.mainloop()
 
