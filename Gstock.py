@@ -53,6 +53,12 @@ def on_submit():
     result_label.config(text="Vous avez saisi : " + entered_text)
     search_zone.delete(0, "end")
     search_zone.insert(0, "chercher un produit")
+    news.place(x=1500, y=800)
+    setting.place(x=1500, y=800)
+    items.place(x=1500, y=800)
+    document.place(x=1500, y=800)
+    exp.place(x=1500, y=800)
+    dashbroad.place(x=400, y=145)
 def on_entry_click(event):
     if search_zone.get() == "chercher un produit":
         search_zone.delete(0, "end")  # Delete current text in the entry
@@ -83,7 +89,7 @@ canvas.pack()
 logout = tk.Button(r, text='Déconnexion', width=10, command=r.destroy, background="white", fg="#683FA9")
 logout.place(x=1380, y=10)
 # button name + width
-search = tk.Button(r, text='OK', width=10, background="#683FA9", fg="white", command=on_submit, activebackground="#3D0E89", activeforeground="white")
+search = tk.Button(r, text='Chercher', width=10, background="#683FA9", fg="white", command=on_submit, activebackground="#3D0E89", activeforeground="white")
 search.place(x=1380, y=113)
 # button name + width
 test1 = tk.Button(r, text='Test', width=10, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white")
@@ -135,8 +141,8 @@ setting_page_text.place(x=350, y=10)
 search_zone = tk.Entry(r)
 search_zone.insert(10, "chercher un produit")
 search_zone.place(x=1200, y=117)
-result_label = tk.Label(r, text="ZFQVQDVQDV")
-result_label.place(x=0, y=10)
+result_label = tk.Label(r, text="chercher un produit")
+result_label.place(x=700, y=80)
 search_zone.bind("<FocusIn>", on_entry_click)
 #footer du page
 footer_page_text = tk.Label(canvas, text="This application Devlopped by Kefi Maher using Python 3.8.10 ", font=("Arial", 10), fg="white", background="#3E4146")
