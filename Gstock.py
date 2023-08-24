@@ -49,7 +49,6 @@ def exp_visibility():
  dashbroad.place(x=1500, y=800)
 #button search
 def on_submit():
-
     entered_text = search_zone.get()
     z=""
     r0 = tk.Label(dashbroad, text=entered_text, font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
