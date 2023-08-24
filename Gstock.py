@@ -49,9 +49,11 @@ def exp_visibility():
  dashbroad.place(x=1500, y=800)
 #button search
 def on_submit():
+    x=""
     entered_text = search_zone.get()
-    z=""
     r0 = tk.Label(dashbroad, text=entered_text, font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
+    if  entered_text!=x:
+       print ("deffrent")
     if entered_text!="chercher un produit":
        r0.place(x=260, y=100)
        r1.place(x=10, y=100)
@@ -65,12 +67,7 @@ def on_submit():
        document.place(x=1500, y=800)
        exp.place(x=1500, y=800)
        dashbroad.place(x=400, y=145)
-       z=entered_text
-    if z!="":
-        print("im not vide")
-        r0 = tk.Label(dashbroad, text="", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
-        r0.place(x=260, y=100)
-        z=""
+       x=entered_text
 def on_entry_click(event):
     if search_zone.get() == "chercher un produit":
         search_zone.delete(0, "end")  # Delete current text in the entry
