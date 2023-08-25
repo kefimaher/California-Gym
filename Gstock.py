@@ -64,7 +64,7 @@ def on_submit():
        document.place(x=1500, y=800)
        exp.place(x=1500, y=800)
        dashbroad.place(x=400, y=145)
-
+       search_zone.place(x=1, y=1)
 def on_entry_click(event):
     if search_zone.get() == "chercher un produit":
         search_zone.delete(0, "end")  # Delete current text in the entry
