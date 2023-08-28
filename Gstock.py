@@ -60,9 +60,6 @@ def on_submit():
        search_zone.place(x=1000, y=1000)
        search = tk.Button(r, text='À nouvau', width=10, background="#683FA9", fg="white", command=encore, activebackground="#3D0E89", activeforeground="white")
        search.place(x=1380, y=113)
-       entered_text=""
-       r0 = tk.Label(dashbroad, text=entered_text, font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
-       r0.place(x=255, y=100)
 def encore():
     search = tk.Button(r, text='Chercher', width=10, background="#683FA9", fg="white", command=on_submit, activebackground="#3D0E89", activeforeground="white")
     search.place(x=1380, y=113)
