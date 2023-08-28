@@ -65,11 +65,15 @@ def on_submit():
        exp.place(x=1500, y=800)
        dashbroad.place(x=400, y=145)
        search_zone.place(x=1, y=1)
-       search = tk.Button(r, text='agin', width=10, background="#683FA9", fg="white", command="", activebackground="#3D0E89", activeforeground="white")
+       search = tk.Button(r, text='À nouvau', width=10, background="#683FA9", fg="white", command=encore, activebackground="#3D0E89", activeforeground="white")
        search.place(x=1380, y=113)
+def encore():
+    search = tk.Button(r, text='Chercher', width=10, background="#683FA9", fg="white", command=on_submit, activebackground="#3D0E89", activeforeground="white")
+    search.place(x=1380, y=113)
+    search_zone.place(x=1200, y=117)
 def on_entry_click(event):
     if search_zone.get() == "chercher un produit":
-        search_zone.delete(0, "end")  # Delete current text in the entry
+       search_zone.delete(0, "end")  # Delete current text in the entry
 
 #button reset
 def reset():
