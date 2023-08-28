@@ -74,7 +74,6 @@ def encore():
 def on_entry_click(event):
     if search_zone.get() == "chercher un produit":
        search_zone.delete(0, "end")  # Delete current text in the entry
-
 #button reset
 def reset():
     quantitezone.delete(0, tk.END)
