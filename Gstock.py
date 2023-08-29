@@ -210,13 +210,13 @@ r2 = tk.Label(dashbroad, text="Nombre des Pièce Trouve :", font=("Arial", 18), 
 r3 = tk.Label(dashbroad, text="Prix de Chaque Pièce :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
 search_zone.bind("<FocusIn>", on_entry_click)
 #rectangele du tableu du bord
-dashbroadstatic1 = tk.Button(dashbroad, text='1', height=8, width=30,  background="red", fg="white", activebackground="#3D0E89", activeforeground="white", command=reset)
+dashbroadstatic1 = tk.Button(dashbroad, text='1', height=8, width=30,  background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white")
 dashbroadstatic1.place(x=10, y=100)
-dashbroadstatic2 = tk.Button(dashbroad, text='2', height=8, width=30, background="green", fg="white", activebackground="#3D0E89", activeforeground="white", command=reset)
+dashbroadstatic2 = tk.Button(dashbroad, text='2', height=8, width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white")
 dashbroadstatic2.place(x=300, y=100)
-dashbroadstatic3 = tk.Button(dashbroad, text='3', height=8, width=30, background="yellow", fg="white", activebackground="#3D0E89", activeforeground="white", command=reset)
+dashbroadstatic3 = tk.Button(dashbroad, text='3', height=8, width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white")
 dashbroadstatic3.place(x=10, y=260)
-dashbroadstatic4 = tk.Button(dashbroad, text='4', height=8, width=30, background="blue", fg="white", activebackground="#3D0E89", activeforeground="white", command=reset)
+dashbroadstatic4 = tk.Button(dashbroad, text='4', height=8, width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white")
 dashbroadstatic4.place(x=300, y=260)
 r.mainloop()
 
