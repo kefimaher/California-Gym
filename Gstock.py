@@ -45,26 +45,9 @@ def exp_visibility():
 def on_submit():
     entered_text = search_zone.get()
     if entered_text!="chercher un produit":
-       #  r0 = tk.Label(dashbroad, text=entered_text, font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
-    #    r0.place(x=255, y=100)
-
-
-       produitarecherche  = tk.Entry(dashbroad,fg="red")
+       produitarecherche  = tk.Entry(dashbroad)
        produitarecherche.insert(10, entered_text)
        produitarecherche.place(x=260, y=105)
-
-
-
-
-
-
-
-
-
-
-
-
-
        r1.place(x=10, y=100)
        r2.place(x=10, y=150)
        r3.place(x=10, y=200)
@@ -75,13 +58,6 @@ def on_submit():
        items.place(x=1500, y=800)
        document.place(x=1500, y=800)
        dashbroad.place(x=400, y=145)
-       search_zone.place(x=1000, y=1000)
-       search = tk.Button(r, text='À nouvau', width=10, background="#683FA9", fg="white", command=encore, activebackground="#3D0E89", activeforeground="white")
-       search.place(x=1380, y=113)
-def encore():
-    search = tk.Button(r, text='Chercher', width=10, background="#683FA9", fg="white", command=on_submit, activebackground="#3D0E89", activeforeground="white")
-    search.place(x=1380, y=113)
-    search_zone.place(x=1200, y=117)
 def on_entry_click(event):
     if search_zone.get() == "chercher un produit":
        search_zone.delete(0, "end")  # Delete current text in the entry
