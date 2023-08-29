@@ -67,7 +67,6 @@ def reset():
     prixezone.delete(0, tk.END)
     autre.delete(0, tk.END)
     numerofacture.delete(0, tk.END)
-
 #canvas
 canvas = tk.Canvas(r, width=1500, height=800, background='grey')
 # line
@@ -99,7 +98,7 @@ test2 = tk.Button(r, text='Test', width=10, background="#683FA9", fg="white", ac
 test2.place(x=550, y=113)
 # button navbar a gauche vertical
 #tableau du bord
-dashbroad = tk.Button(r, text='Tableau de bord', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=dashbroad_visibility)
+dashbroad = tk.Button(r, text='Tableau du Bord', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=dashbroad_visibility)
 dashbroad.place(x=1, y=180)
 #Item list : afficher un page contien la list des produit dans la table (id,image,nom,prix,quantite)
 items = tk.Button(r, text='Liste des produits', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=item_visibility)
@@ -122,7 +121,7 @@ exp= tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
 document = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
 news = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
 #contenu du chaque page
-dashbroad_text = tk.Label(dashbroad, text="Contenu tableau du broad ", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
+dashbroad_text = tk.Label(dashbroad, text="Tableau du Bord", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 dashbroad_text.place (x=350, y=10)
 items_page_text = tk.Label(items, text="Contenu du page items ", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 items_page_text.place (x=350, y=10)
