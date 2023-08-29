@@ -58,6 +58,10 @@ def on_submit():
        items.place(x=1500, y=800)
        document.place(x=1500, y=800)
        dashbroad.place(x=400, y=145)
+       dashbroadstatic1.place(x=10, y=260)
+       dashbroadstatic2.place(x=300, y=260)
+       dashbroadstatic3.place(x=10, y=430)
+       dashbroadstatic4.place(x=300, y=430)
 def on_entry_click(event):
     if search_zone.get() == "chercher un produit":
        search_zone.delete(0, "end")  # Delete current text in the entry
@@ -211,12 +215,14 @@ r3 = tk.Label(dashbroad, text="Prix de Chaque Pièce :", font=("Arial", 18), fg=
 search_zone.bind("<FocusIn>", on_entry_click)
 #rectangele du tableu du bord
 dashbroadstatic1 = tk.Button(dashbroad, text='1', height=8, width=30,  background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white")
-dashbroadstatic1.place(x=10, y=100)
 dashbroadstatic2 = tk.Button(dashbroad, text='2', height=8, width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white")
-dashbroadstatic2.place(x=300, y=100)
 dashbroadstatic3 = tk.Button(dashbroad, text='3', height=8, width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white")
-dashbroadstatic3.place(x=10, y=260)
 dashbroadstatic4 = tk.Button(dashbroad, text='4', height=8, width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white")
+
+dashbroadstatic1.place(x=10, y=100)
+dashbroadstatic2.place(x=300, y=100)
+dashbroadstatic3.place(x=10, y=260)
 dashbroadstatic4.place(x=300, y=260)
+
 r.mainloop()
 
