@@ -44,7 +44,7 @@ def exp_visibility():
 #button search
 def on_submit():
     entered_text = search_zone.get()
-    if entered_text!="chercher un produit":
+    if ((entered_text!="chercher un produit")and(entered_text!="")):
        produitarecherche  = tk.Entry(dashbroad)
        produitarecherche.insert(10, entered_text)
        produitarecherche.place(x=260, y=105)
