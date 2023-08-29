@@ -45,9 +45,9 @@ def exp_visibility():
 def on_submit():
     entered_text = search_zone.get()
     if ((entered_text!="chercher un produit")and(entered_text!="")):
-       produitarecherche  = tk.Entry(dashbroad)
+       produitarecherche  = tk.Entry(dashbroad, background="#BBBBBB", bd="0", fg="#683FA9", font=("Arial", 16), highlightbackground="#BBBBBB")
        produitarecherche.insert(10, entered_text)
-       produitarecherche.place(x=260, y=105)
+       produitarecherche.place(x=260, y=100)
        r1.place(x=10, y=100)
        r2.place(x=10, y=150)
        r3.place(x=10, y=200)
