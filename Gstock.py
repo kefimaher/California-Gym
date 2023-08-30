@@ -15,7 +15,13 @@ def dashbroad_visibility():
  r1.place(x=1500, y=800)
  r2.place(x=1500, y=800)
  r3.place(x=1500, y=800)
-
+ dashbroadstatic1.place(x=100, y=100)
+ dashbroadstatic2.place(x=400, y=100)
+ dashbroadstatic3.place(x=700, y=100)
+ search_zone.delete(0, "end")
+ search_zone.insert(0, "")
+ produitarecherche.delete(0, "end")
+ produitarecherche.insert(0, "")
 def item_visibility():
  items.place(x=400, y=145)
  setting.place(x=1500, y=800)
@@ -49,6 +55,7 @@ def exp_visibility():
 #button search
 def on_submit():
     entered_text = search_zone.get()
+    produitarecherche.delete(0, "end")
     if ((entered_text!="chercher un produit")and(entered_text!="")):
        produitarecherche.insert(10, entered_text)
        produitarecherche.place(x=260, y=100)
@@ -62,9 +69,10 @@ def on_submit():
        items.place(x=1500, y=800)
        document.place(x=1500, y=800)
        dashbroad.place(x=400, y=145)
-       dashbroadstatic1.place(x=10, y=260)
-       dashbroadstatic2.place(x=300, y=260)
-       dashbroadstatic3.place(x=10, y=430)
+       dashbroadstatic1.place(x=100, y=300)
+       dashbroadstatic2.place(x=400, y=300)
+       dashbroadstatic3.place(x=700, y=300)
+
 def on_entry_click(event):
     if search_zone.get() == "chercher un produit":
        search_zone.delete(0, "end")  # Delete current text in the entry
