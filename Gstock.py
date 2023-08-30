@@ -11,6 +11,11 @@ def dashbroad_visibility():
  items.place(x=1500, y=800)
  news.place(x=1500, y=800)
  exp.place(x=1500, y=800)
+ produitarecherche.place(x=1500, y=800)
+ r1.place(x=1500, y=800)
+ r2.place(x=1500, y=800)
+ r3.place(x=1500, y=800)
+
 def item_visibility():
  items.place(x=400, y=145)
  setting.place(x=1500, y=800)
@@ -45,7 +50,6 @@ def exp_visibility():
 def on_submit():
     entered_text = search_zone.get()
     if ((entered_text!="chercher un produit")and(entered_text!="")):
-       produitarecherche  = tk.Entry(dashbroad, background="#BBBBBB", bd="0", fg="#683FA9", font=("Arial", 16), highlightbackground="#BBBBBB")
        produitarecherche.insert(10, entered_text)
        produitarecherche.place(x=260, y=100)
        r1.place(x=10, y=100)
@@ -61,7 +65,6 @@ def on_submit():
        dashbroadstatic1.place(x=10, y=260)
        dashbroadstatic2.place(x=300, y=260)
        dashbroadstatic3.place(x=10, y=430)
-       dashbroadstatic4.place(x=300, y=430)
 def on_entry_click(event):
     if search_zone.get() == "chercher un produit":
        search_zone.delete(0, "end")  # Delete current text in the entry
@@ -217,12 +220,9 @@ search_zone.bind("<FocusIn>", on_entry_click)
 dashbroadstatic1 = tk.Button(dashbroad, text='1', height=8, width=30,  background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white", state='disabled')
 dashbroadstatic2 = tk.Button(dashbroad, text='2', height=8, width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white", state='disabled')
 dashbroadstatic3 = tk.Button(dashbroad, text='3', height=8, width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white", state='disabled')
-dashbroadstatic4 = tk.Button(dashbroad, text='4', height=8, width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white", state='disabled')
-
-dashbroadstatic1.place(x=10, y=100)
-dashbroadstatic2.place(x=300, y=100)
-dashbroadstatic3.place(x=10, y=260)
-dashbroadstatic4.place(x=300, y=260)
-
+produitarecherche  = tk.Entry(dashbroad, background="#BBBBBB", bd="0", fg="#683FA9", font=("Arial", 16), highlightbackground="#BBBBBB")
+dashbroadstatic1.place(x=100, y=100)
+dashbroadstatic2.place(x=400, y=100)
+dashbroadstatic3.place(x=700, y=100)
 r.mainloop()
 
