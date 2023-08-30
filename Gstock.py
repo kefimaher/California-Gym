@@ -21,7 +21,6 @@ def dashbroad_visibility():
  search_zone.delete(0, "end")
  search_zone.insert(0, "")
  produitarecherche.delete(0, "end")
- produitarecherche.insert(0, "")
 def item_visibility():
  items.place(x=400, y=145)
  setting.place(x=1500, y=800)
