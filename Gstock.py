@@ -62,7 +62,7 @@ def on_submit():
        r2.place(x=10, y=150)
        r3.place(x=10, y=200)
        search_zone.delete(0, "end")
-       search_zone.insert(0, "")
+       search_zone.insert(0, "chercher un produit")
        news.place(x=1500, y=800)
        setting.place(x=1500, y=800)
        items.place(x=1500, y=800)
@@ -71,7 +71,6 @@ def on_submit():
        dashbroadstatic1.place(x=100, y=300)
        dashbroadstatic2.place(x=400, y=300)
        dashbroadstatic3.place(x=700, y=300)
-
 def on_entry_click(event):
     if search_zone.get() == "chercher un produit":
        search_zone.delete(0, "end")  # Delete current text in the entry
@@ -99,7 +98,7 @@ Title = canvas.create_text(200, 40, text="Stock Net", fill="white", font='Helvet
 # y = canvas.create_rectangle(400, 800, 1500, 146, fill="grey")
 canvas.pack()
 # button name + width
-logout = tk.Button(r, text='Déconnexion', highlightbackground="#683FA9",  width=10, background="#683FA9", fg="white", command=r.destroy, activebackground="#E70000", activeforeground="black")
+logout = tk.Button(r, text='Déconnexion', highlightbackground="#683FA9",  width=10, background="#683FA9", fg="white", command=r.destroy, activebackground="#3D0E89", activeforeground="white")
 logout.place(x=1380, y=10)
 # button name + width
 search = tk.Button(r, text='Chercher', width=10, background="#683FA9", fg="white", command=on_submit, activebackground="#3D0E89", activeforeground="white")
@@ -123,9 +122,6 @@ news.place(x=1, y=280)
 #export
 exp = tk.Button(r, text='Exporter', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=exp_visibility)
 exp.place(x=1, y=330)
-#parametre
-setting = tk.Button(r, text='Parametre', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=settings_visibility)
-setting.place(x=1, y=700)
 #les pages
 dashbroad = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
 dashbroad.place(x=400, y=145)
