@@ -220,7 +220,6 @@ r2 = tk.Label(dashbroad, text="Nombre des Pièce Trouve :", font=("Arial", 18), 
 r3 = tk.Label(dashbroad, text="Prix de Chaque Pièce :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
 search_zone.bind("<FocusIn>", on_entry_click)
 #rectangele du tableu du bord
-
 dashbroadstatic1 = tk.Button(dashbroad, text='Total Piece : 3610', height=8, width=30,  background="#683FA9", state='disabled')
 dashbroadstatic2 = tk.Button(dashbroad, text='Nombre Des Commandes : 1500', height=8, width=30, background="#683FA9", state='disabled')
 dashbroadstatic3 = tk.Button(dashbroad, text='chiffre d"affaire : 366,500$', height=8, width=30, background="#683FA9", state='disabled')
