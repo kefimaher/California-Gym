@@ -57,7 +57,7 @@ def on_submit():
     produitarecherche.delete(0, "end")
     if ((entered_text!="chercher un produit")and(entered_text!="")):
        produitarecherche.insert(10, entered_text)
-       produitarecherche.place(x=260, y=100)
+       produitarecherche.place(x=280, y=105)
        r1.place(x=10, y=100)
        r2.place(x=10, y=150)
        r3.place(x=10, y=200)
