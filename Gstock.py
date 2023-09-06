@@ -134,6 +134,8 @@ news.place(x=1, y=280)
 #export
 exp = tk.Button(r, text='Exporter', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=exp_visibility)
 exp.place(x=1, y=330)
+setting = tk.Button(r, text='Setting', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=settings_visibility)
+setting.place(x=1, y=700)
 #les pages
 dashbroad = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
 dashbroad.place(x=400, y=145)
@@ -264,6 +266,17 @@ label_image = tk.Label(r, image=image_tk)
 #label_image.place(x=400, y=400)
 logout = tk.Button(r, text='Déconnexion', highlightbackground="#683FA9",  width=10, background="#683FA9", fg="white", command=r.destroy, activebackground="#3D0E89", activeforeground="white")
 logout.place(x=1380, y=10)
+#page setting
+setting_page_text = tk.Label(setting, text="Changer le couleur", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
+setting_page_text.place (x=10, y=100)
+s1= tk.Button(setting, text='', height=2, width=3, background="#683FA9", fg="#683FA9", activebackground="#683FA9")
+s2= tk.Button(setting, text='red', height=2, width=3, background="white", fg="black")
+s3= tk.Button(setting, text='bleu', height=2, width=3, background="white", fg="black")
+s4= tk.Button(setting, text='green', height=2, width=3, background="white", fg="black")
+s1.place(x=10, y=150)
+s2.place(x=300, y=90)
+s3.place(x=400, y=208)
+s4.place(x=500, y=176)
 r.mainloop()
 
 
