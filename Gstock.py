@@ -101,22 +101,34 @@ def violette():
  canvas.create_rectangle(400, 70, 1500, 0, fill="#55259F")
  canvas.create_rectangle(0, 70, 400, 0, fill="#55259F")
  Title = canvas.create_text(200, 40, text="Stock Net", fill="white", font='Helvetica 15 bold')
+ canvas.create_line(400, 145, 1500, 145, fill="black", width=2)
 def blue():
  canvas.create_rectangle(400, 800, 1500, 0, fill="white")
  canvas.create_rectangle(400, 70, 1500, 0, fill="#5DADE2")
  canvas.create_rectangle(0, 70, 400, 0, fill="#5DADE2")
  Title = canvas.create_text(200, 40, text="Stock Net", fill="white", font='Helvetica 15 bold')
+ canvas.create_line(400, 145, 1500, 145, fill="black", width=2)
+ search = tk.Button(r, text='Chercher', width=10, background="#5DADE2", fg="white", command=on_submit, activebackground="#3D0E89", activeforeground="white")
+ search.place(x=1380, y=113)
+ test1 = tk.Button(r, text='Test', width=10, background="#5DADE2", fg="white", activebackground="#3D0E89", activeforeground="white")
+ test1.place(x=420, y=113)
+ test2 = tk.Button(r, text='Test', width=10, background="#5DADE2", fg="white", activebackground="#3D0E89", activeforeground="white")
+ test2.place(x=550, y=113)
+ logout = tk.Button(r, text='Déconnexion', highlightbackground="#683FA9",  width=10, background="#5DADE2", fg="white", command=r.destroy, activebackground="#3D0E89", activeforeground="white")
+ logout.place(x=1380, y=10)
 def green():
  canvas.create_rectangle(400, 800, 1500, 0, fill="white")
  canvas.create_rectangle(400, 70, 1500, 0, fill="#72B62E")
  canvas.create_rectangle(0, 70, 400, 0, fill="#72B62E")
  Title = canvas.create_text(200, 40, text="Stock Net", fill="white", font='Helvetica 15 bold')
+ canvas.create_line(400, 145, 1500, 145, fill="black", width=2)
 def red():
  canvas.create_rectangle(400, 800, 1500, 0, fill="white")
  canvas.create_rectangle(400, 70, 1500, 0, fill="#C65680")
  canvas.create_rectangle(0, 70, 400, 0, fill="#C65680")
  canvas.create_line(400, 145, 1500, 145, fill="black", width=2)
  Title = canvas.create_text(200, 40, text="Stock Net", fill="white", font='Helvetica 15 bold')
+ canvas.create_line(400, 145, 1500, 145, fill="black", width=2)
 #canvas
 canvas = tk.Canvas(r, width=1500, height=800, background='grey')
 # line
@@ -128,7 +140,7 @@ canvas.create_rectangle(400, 800, 1500, 0, fill="white")
 # barre de navigation a haut a droite
 canvas.create_rectangle(400, 70, 1500, 0, fill="#55259F")
 # barre de navigation a haut a droite
-canvas.create_rectangle(0, 70, 400, 0, fill="#492089")
+canvas.create_rectangle(0, 70, 400, 0, fill="#55259F")
 canvas.create_line(400, 145, 1500, 145, fill="#492089", width=2)
 Title = canvas.create_text(200, 40, text="Stock Net", fill="white", font='Helvetica 15 bold')
 # y = canvas.create_rectangle(400, 800, 1500, 146, fill="grey")
