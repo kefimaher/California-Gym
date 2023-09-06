@@ -1,7 +1,9 @@
 import tkinter as tk
+import datetime
 import webbrowser
 from PIL import ImageTk, Image
 r = tk.Tk()
+date_et_heure_actuelles = datetime.datetime.now()
 # Titre du page
 r.title('Stock Net')
 #les lien des page
@@ -404,6 +406,14 @@ s1.place(x=0, y=150)
 s2.place(x=100, y=150)
 s3.place(x=200, y=150)
 s4.place(x=300, y=150)
+#time
+
+heure_actuelle = date_et_heure_actuelles.hour
+minutes_actuelles = date_et_heure_actuelles.minute
+heure = tk.Label(r, text=heure_actuelle, font=("Arial", 20), background="white")
+menute = tk.Label(r, text=minutes_actuelles, font=("Arial", 18), fg="red", background="#BBBBBB")
+heure.place(x=750, y=20)
+menute.place(x=750, y=20)
 r.mainloop()
 
 
