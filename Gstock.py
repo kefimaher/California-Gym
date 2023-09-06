@@ -124,6 +124,34 @@ def blue():
  test2.place(x=550, y=113)
  logout = tk.Button(r, text='Déconnexion', highlightbackground="#683FA9",  width=10, background="#4F91BD", fg="white", command=r.destroy, activebackground="#3C7092", activeforeground="white")
  logout.place(x=1380, y=10)
+
+
+
+ a1= tk.Button(dashbroad, text='80', height=8, width=1, background="#3C7092", state='disabled')
+ a2= tk.Button(dashbroad, text='100', height=10, width=1, background="#3C7092", state='disabled')
+ a3= tk.Button(dashbroad, text='30', height=3, width=1, background="#3C7092", state='disabled')
+ a4= tk.Button(dashbroad, text='50', height=5, width=1, background="#3C7092", state='disabled')
+ a5= tk.Button(dashbroad, text='90', height=9, width=1, background="#3C7092", state='disabled')
+ a6= tk.Button(dashbroad, text='110', height=11, width=1, background="#3C7092", state='disabled')
+ a7= tk.Button(dashbroad, text='30', height=3, width=1, background="#3C7092", state='disabled')
+ a8= tk.Button(dashbroad, text='20', height=2, width=1,  background="#3C7092", state='disabled')
+ a1.place(x=200, y=125)
+ a2.place(x=300, y=90)
+ a3.place(x=400, y=208)
+ a4.place(x=500, y=176)
+ a5.place(x=600, y=108)
+ a6.place(x=700, y=70)
+ a7.place(x=800, y=206)
+ a8.place(x=900, y=223)
+ dashbroadstatic1 = tk.Button(dashbroad, text='Total Piece : 3610', height=8, width=30,  background="#3C7092", state='disabled')
+ dashbroadstatic2 = tk.Button(dashbroad, text='Nombre Des Commandes : 1500', height=8, width=30, background="#3C7092", state='disabled')
+ dashbroadstatic3 = tk.Button(dashbroad, text='chiffre d"affaire : 366,500$', height=8, width=30, background="#3C7092", state='disabled')
+ dashbroadstatic1.place(x=100, y=350)
+ dashbroadstatic2.place(x=400, y=350)
+ dashbroadstatic3.place(x=700, y=350)
+
+
+
 def green():
  canvas.create_rectangle(400, 800, 1500, 0, fill="white")
  canvas.create_rectangle(400, 70, 1500, 0, fill="#72B62E")
@@ -138,6 +166,48 @@ def green():
  test2.place(x=550, y=113)
  logout = tk.Button(r, text='Déconnexion', highlightbackground="#609928",  width=10, background="#609928", fg="white", command=r.destroy, activebackground="#609928", activeforeground="white")
  logout.place(x=1380, y=10)
+
+
+
+
+ a1= tk.Button(dashbroad, text='80', height=8, width=1, background="#609928", state='disabled')
+ a2= tk.Button(dashbroad, text='100', height=10, width=1, background="#609928", state='disabled')
+ a3= tk.Button(dashbroad, text='30', height=3, width=1, background="#609928", state='disabled')
+ a4= tk.Button(dashbroad, text='50', height=5, width=1, background="#609928", state='disabled')
+ a5= tk.Button(dashbroad, text='90', height=9, width=1, background="#609928", state='disabled')
+ a6= tk.Button(dashbroad, text='110', height=11, width=1, background="#609928", state='disabled')
+ a7= tk.Button(dashbroad, text='30', height=3, width=1, background="#609928", state='disabled')
+ a8= tk.Button(dashbroad, text='20', height=2, width=1,  background="#609928", state='disabled')
+ a1.place(x=200, y=125)
+ a2.place(x=300, y=90)
+ a3.place(x=400, y=208)
+ a4.place(x=500, y=176)
+ a5.place(x=600, y=108)
+ a6.place(x=700, y=70)
+ a7.place(x=800, y=206)
+ a8.place(x=900, y=223)
+ dashbroadstatic1 = tk.Button(dashbroad, text='Total Piece : 3610', height=8, width=30,  background="#609928", state='disabled')
+ dashbroadstatic2 = tk.Button(dashbroad, text='Nombre Des Commandes : 1500', height=8, width=30, background="#609928", state='disabled')
+ dashbroadstatic3 = tk.Button(dashbroad, text='chiffre d"affaire : 366,500$', height=8, width=30, background="#609928", state='disabled')
+ dashbroadstatic1.place(x=100, y=350)
+ dashbroadstatic2.place(x=400, y=350)
+ dashbroadstatic3.place(x=700, y=350)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 def red():
  canvas.create_rectangle(400, 800, 1500, 0, fill="white")
  canvas.create_rectangle(400, 70, 1500, 0, fill="#C65680")
