@@ -96,6 +96,13 @@ def reset():
     prixezone.delete(0, tk.END)
     autre.delete(0, tk.END)
     numerofacture.delete(0, tk.END)
+def violette():
+    x=""
+def blue():
+ canvas.create_rectangle(400, 800, 1500, 0, fill="blue")
+ canvas.create_rectangle(400, 800, 1500, 0, fill="#55259F")
+ canvas.create_rectangle(400, 70, 1500, 0, fill="blue")
+ canvas.create_rectangle(0, 70, 400, 0, fill="blue")
 #canvas
 canvas = tk.Canvas(r, width=1500, height=800, background='grey')
 # line
@@ -269,8 +276,8 @@ logout.place(x=1380, y=10)
 #page setting
 setting_page_text = tk.Label(setting, text="Change la couleur de l'application", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
 setting_page_text.place (x=10, y=100)
-s1= tk.Button(setting, text='', height=2, width=3, background="#683FA9", activebackground="#683FA9")
-s2= tk.Button(setting, text='', height=2, width=3, background="#5DADE2", activebackground="#5DADE2")
+s1= tk.Button(setting, text='', height=2, width=3, background="#683FA9", activebackground="#683FA9", command=violette)
+s2= tk.Button(setting, text='', height=2, width=3, background="#5DADE2", activebackground="#5DADE2", command=blue)
 s3= tk.Button(setting, text='', height=2, width=3, background="#72B62E", activebackground="#72B62E")
 s4= tk.Button(setting, text='', height=2, width=3, background="#C65680", activebackground="#C65680")
 s1.place(x=0, y=150)
