@@ -114,7 +114,7 @@ def blue():
  test1.place(x=420, y=113)
  test2 = tk.Button(r, text='Test', width=10, background="#5DADE2", fg="white", activebackground="#3D0E89", activeforeground="white")
  test2.place(x=550, y=113)
- logout = tk.Button(r, text='Déconnexion', highlightbackground="#683FA9",  width=10, background="#5DADE2", fg="white", command=r.destroy, activebackground="#3D0E89", activeforeground="white")
+ logout = tk.Button(r, text='Déconnexion', highlightbackground="#683FA9",  width=10, background="#4F91BD", fg="white", command=r.destroy, activebackground="#3C7092", activeforeground="white")
  logout.place(x=1380, y=10)
 def green():
  canvas.create_rectangle(400, 800, 1500, 0, fill="white")
