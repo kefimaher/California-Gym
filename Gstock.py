@@ -97,13 +97,25 @@ def reset():
     autre.delete(0, tk.END)
     numerofacture.delete(0, tk.END)
 def violette():
-    x=""
-def blue():
-
  canvas.create_rectangle(400, 800, 1500, 0, fill="#5DADE2")
  canvas.create_rectangle(400, 800, 1500, 0, fill="#5DADE2")
  canvas.create_rectangle(400, 70, 1500, 0, fill="#5DADE2")
  canvas.create_rectangle(0, 70, 400, 0, fill="#5DADE2")
+def blue():
+ canvas.create_rectangle(400, 800, 1500, 0, fill="#5DADE2")
+ canvas.create_rectangle(400, 800, 1500, 0, fill="#5DADE2")
+ canvas.create_rectangle(400, 70, 1500, 0, fill="#5DADE2")
+ canvas.create_rectangle(0, 70, 400, 0, fill="#5DADE2")
+def green():
+ canvas.create_rectangle(400, 800, 1500, 0, fill="green")
+ canvas.create_rectangle(400, 800, 1500, 0, fill="#5DADE2")
+ canvas.create_rectangle(400, 70, 1500, 0, fill="#5DADE2")
+ canvas.create_rectangle(0, 70, 400, 0, fill="#5DADE2")
+def red():
+ canvas.create_rectangle(400, 800, 1500, 0, fill="white")
+ canvas.create_rectangle(400, 70, 1500, 0, fill="#C65680")
+ canvas.create_rectangle(0, 70, 400, 0, fill="#C65680")
+ canvas.create_line(400, 145, 1500, 145, fill="black", width=2)
 #canvas
 canvas = tk.Canvas(r, width=1500, height=800, background='grey')
 # line
@@ -279,8 +291,8 @@ setting_page_text = tk.Label(setting, text="Change la couleur de l'application",
 setting_page_text.place (x=10, y=100)
 s1= tk.Button(setting, text='', height=2, width=3, background="#683FA9", activebackground="#683FA9", command=violette)
 s2= tk.Button(setting, text='', height=2, width=3, background="#5DADE2", activebackground="#5DADE2", command=blue)
-s3= tk.Button(setting, text='', height=2, width=3, background="#72B62E", activebackground="#72B62E")
-s4= tk.Button(setting, text='', height=2, width=3, background="#C65680", activebackground="#C65680")
+s3= tk.Button(setting, text='', height=2, width=3, background="#72B62E", activebackground="#72B62E", command=green)
+s4= tk.Button(setting, text='', height=2, width=3, background="#C65680", activebackground="#C65680", command=red)
 s1.place(x=0, y=150)
 s2.place(x=100, y=150)
 s3.place(x=200, y=150)
