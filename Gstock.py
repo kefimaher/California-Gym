@@ -99,10 +99,11 @@ def reset():
 def violette():
     x=""
 def blue():
- canvas.create_rectangle(400, 800, 1500, 0, fill="blue")
- canvas.create_rectangle(400, 800, 1500, 0, fill="#55259F")
- canvas.create_rectangle(400, 70, 1500, 0, fill="blue")
- canvas.create_rectangle(0, 70, 400, 0, fill="blue")
+
+ canvas.create_rectangle(400, 800, 1500, 0, fill="#5DADE2")
+ canvas.create_rectangle(400, 800, 1500, 0, fill="#5DADE2")
+ canvas.create_rectangle(400, 70, 1500, 0, fill="#5DADE2")
+ canvas.create_rectangle(0, 70, 400, 0, fill="#5DADE2")
 #canvas
 canvas = tk.Canvas(r, width=1500, height=800, background='grey')
 # line
