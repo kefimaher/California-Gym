@@ -97,25 +97,26 @@ def reset():
     autre.delete(0, tk.END)
     numerofacture.delete(0, tk.END)
 def violette():
- canvas.create_rectangle(400, 800, 1500, 0, fill="#5DADE2")
- canvas.create_rectangle(400, 800, 1500, 0, fill="#5DADE2")
- canvas.create_rectangle(400, 70, 1500, 0, fill="#5DADE2")
- canvas.create_rectangle(0, 70, 400, 0, fill="#5DADE2")
+ canvas.create_rectangle(400, 800, 1500, 0, fill="white")
+ canvas.create_rectangle(400, 70, 1500, 0, fill="#55259F")
+ canvas.create_rectangle(0, 70, 400, 0, fill="#55259F")
+ Title = canvas.create_text(200, 40, text="Stock Net", fill="white", font='Helvetica 15 bold')
 def blue():
- canvas.create_rectangle(400, 800, 1500, 0, fill="#5DADE2")
- canvas.create_rectangle(400, 800, 1500, 0, fill="#5DADE2")
+ canvas.create_rectangle(400, 800, 1500, 0, fill="white")
  canvas.create_rectangle(400, 70, 1500, 0, fill="#5DADE2")
  canvas.create_rectangle(0, 70, 400, 0, fill="#5DADE2")
+ Title = canvas.create_text(200, 40, text="Stock Net", fill="white", font='Helvetica 15 bold')
 def green():
- canvas.create_rectangle(400, 800, 1500, 0, fill="green")
- canvas.create_rectangle(400, 800, 1500, 0, fill="#5DADE2")
- canvas.create_rectangle(400, 70, 1500, 0, fill="#5DADE2")
- canvas.create_rectangle(0, 70, 400, 0, fill="#5DADE2")
+ canvas.create_rectangle(400, 800, 1500, 0, fill="white")
+ canvas.create_rectangle(400, 70, 1500, 0, fill="#72B62E")
+ canvas.create_rectangle(0, 70, 400, 0, fill="#72B62E")
+ Title = canvas.create_text(200, 40, text="Stock Net", fill="white", font='Helvetica 15 bold')
 def red():
  canvas.create_rectangle(400, 800, 1500, 0, fill="white")
  canvas.create_rectangle(400, 70, 1500, 0, fill="#C65680")
  canvas.create_rectangle(0, 70, 400, 0, fill="#C65680")
  canvas.create_line(400, 145, 1500, 145, fill="black", width=2)
+ Title = canvas.create_text(200, 40, text="Stock Net", fill="white", font='Helvetica 15 bold')
 #canvas
 canvas = tk.Canvas(r, width=1500, height=800, background='grey')
 # line
