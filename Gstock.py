@@ -240,6 +240,19 @@ canvas.create_rectangle(0, 70, 400, 0, fill="#55259F")
 canvas.create_line(400, 145, 1500, 145, fill="#492089", width=2)
 Title = canvas.create_text(200, 40, text="Stock Net", fill="white", font='Helvetica 15 bold')
 # y = canvas.create_rectangle(400, 800, 1500, 146, fill="grey")
+
+heure_actuelle = date_et_heure_actuelles.hour
+minutes_actuelles = date_et_heure_actuelles.minute
+date_actuelle = date_et_heure_actuelles.date()
+
+
+h = canvas.create_text(800, 40, text=heure_actuelle, fill="white", font='Helvetica 20 bold')
+x = canvas.create_text(820, 40, text=":", fill="white", font='Helvetica 20 bold')
+m = canvas.create_text(840, 40, text=minutes_actuelles, fill="white", font='Helvetica 20 bold')
+
+d = canvas.create_text(50, 680, text=date_actuelle, fill="white", font='Helvetica 14 bold')
+
+
 canvas.pack()
 # button name + width
 search = tk.Button(r, text='Chercher', width=10, background="#683FA9", fg="white", command=on_submit, activebackground="#3D0E89", activeforeground="white")
@@ -406,14 +419,6 @@ s1.place(x=0, y=150)
 s2.place(x=100, y=150)
 s3.place(x=200, y=150)
 s4.place(x=300, y=150)
-#time
-
-heure_actuelle = date_et_heure_actuelles.hour
-minutes_actuelles = date_et_heure_actuelles.minute
-heure = tk.Label(r, text=heure_actuelle, font=("Arial", 20), background="white")
-menute = tk.Label(r, text=minutes_actuelles, font=("Arial", 18), fg="red", background="#BBBBBB")
-heure.place(x=750, y=20)
-menute.place(x=750, y=20)
 r.mainloop()
 
 
