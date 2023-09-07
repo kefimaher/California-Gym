@@ -112,6 +112,7 @@ def violette():
  test2.place(x=550, y=113)
  logout = tk.Button(r, text='Déconnexion', highlightbackground="#683FA9",  width=10, background="#683FA9", fg="white", command=r.destroy, activebackground="#3D0E89", activeforeground="white")
  logout.place(x=1380, y=10)
+ h = canvas.create_text(800, 40, text=heure_actuelle, fill="white", font='Helvetica 20 bold')
 def blue():
  canvas.create_rectangle(400, 800, 1500, 0, fill="white")
  canvas.create_rectangle(400, 70, 1500, 0, fill="#5DADE2")
@@ -126,9 +127,7 @@ def blue():
  test2.place(x=550, y=113)
  logout = tk.Button(r, text='Déconnexion', highlightbackground="#683FA9",  width=10, background="#4F91BD", fg="white", command=r.destroy, activebackground="#3C7092", activeforeground="white")
  logout.place(x=1380, y=10)
-
-
-
+ h = canvas.create_text(800, 40, text=heure_actuelle, fill="white", font='Helvetica 20 bold')
  a1= tk.Button(dashbroad, text='80', height=8, width=1, background="#3C7092", state='disabled')
  a2= tk.Button(dashbroad, text='100', height=10, width=1, background="#3C7092", state='disabled')
  a3= tk.Button(dashbroad, text='30', height=3, width=1, background="#3C7092", state='disabled')
@@ -151,9 +150,6 @@ def blue():
  dashbroadstatic1.place(x=100, y=350)
  dashbroadstatic2.place(x=400, y=350)
  dashbroadstatic3.place(x=700, y=350)
-
-
-
 def green():
  canvas.create_rectangle(400, 800, 1500, 0, fill="white")
  canvas.create_rectangle(400, 70, 1500, 0, fill="#72B62E")
@@ -168,10 +164,6 @@ def green():
  test2.place(x=550, y=113)
  logout = tk.Button(r, text='Déconnexion', highlightbackground="#609928",  width=10, background="#609928", fg="white", command=r.destroy, activebackground="#609928", activeforeground="white")
  logout.place(x=1380, y=10)
-
-
-
-
  a1= tk.Button(dashbroad, text='80', height=8, width=1, background="#609928", state='disabled')
  a2= tk.Button(dashbroad, text='100', height=10, width=1, background="#609928", state='disabled')
  a3= tk.Button(dashbroad, text='30', height=3, width=1, background="#609928", state='disabled')
@@ -194,22 +186,7 @@ def green():
  dashbroadstatic1.place(x=100, y=350)
  dashbroadstatic2.place(x=400, y=350)
  dashbroadstatic3.place(x=700, y=350)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ h = canvas.create_text(800, 40, text=heure_actuelle, fill="white", font='Helvetica 20 bold')
 def red():
  canvas.create_rectangle(400, 800, 1500, 0, fill="white")
  canvas.create_rectangle(400, 70, 1500, 0, fill="#C65680")
@@ -225,6 +202,7 @@ def red():
  test2.place(x=550, y=113)
  logout = tk.Button(r, text='Déconnexion', highlightbackground="#A94A6E",  width=10, background="#A94A6E", fg="white", command=r.destroy, activebackground="#954161", activeforeground="white")
  logout.place(x=1380, y=10)
+ h = canvas.create_text(800, 40, text=heure_actuelle, fill="white", font='Helvetica 20 bold')
 #canvas
 canvas = tk.Canvas(r, width=1500, height=800, background='grey')
 # line
@@ -243,11 +221,6 @@ Title = canvas.create_text(200, 40, text="Stock Net", fill="white", font='Helvet
 heure_actuelle = date_et_heure_actuelles.now()
 minutes_actuelles = date_et_heure_actuelles.minute
 date_actuelle = date_et_heure_actuelles.date()
-h = canvas.create_text(800, 40, text=heure_actuelle, fill="white", font='Helvetica 20 bold')
-#cere un rectange pour cache seconde
-#y = canvas.create_rectangle(840, 50, 1000, 10, fill="#55259F", edgecolor="")
-
-canvas.pack()
 # button name + width
 search = tk.Button(r, text='Chercher', width=10, background="#683FA9", fg="white", command=on_submit, activebackground="#3D0E89", activeforeground="white")
 search.place(x=1380, y=113)
@@ -413,6 +386,8 @@ s1.place(x=0, y=150)
 s2.place(x=100, y=150)
 s3.place(x=200, y=150)
 s4.place(x=300, y=150)
+h = canvas.create_text(800, 40, text=heure_actuelle, fill="white", font='Helvetica 20 bold')
+canvas.pack()
 r.mainloop()
 
 
