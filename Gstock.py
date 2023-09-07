@@ -245,7 +245,7 @@ minutes_actuelles = date_et_heure_actuelles.minute
 date_actuelle = date_et_heure_actuelles.date()
 h = canvas.create_text(800, 40, text=heure_actuelle, fill="white", font='Helvetica 20 bold')
 #cere un rectange pour cache seconde
-y = canvas.create_rectangle(30, 50, 200, 10, fill="black")
+#y = canvas.create_rectangle(840, 50, 1000, 10, fill="#55259F", edgecolor="")
 
 canvas.pack()
 # button name + width
