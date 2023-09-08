@@ -112,7 +112,6 @@ def blue():
  test2.place(x=550, y=113)
  logout = tk.Button(r, text='Déconnexion', highlightbackground="#683FA9",  width=10, background="#4F91BD", fg="white", command=r.destroy, activebackground="#4F91BD", activeforeground="white")
  logout.place(x=1380, y=10)
- h = canvas.create_text(800, 40, text=heure_actuelle, fill="white", font='Helvetica 20 bold')
  a1= tk.Button(dashbroad, text='80', height=8, width=1, background="#3C7092", state='disabled')
  a2= tk.Button(dashbroad, text='100', height=10, width=1, background="#3C7092", state='disabled')
  a3= tk.Button(dashbroad, text='30', height=3, width=1, background="#3C7092", state='disabled')
@@ -176,7 +175,7 @@ def blue():
  produitannulerbutton.place(x=600, y=500)
  setting_page_text = tk.Label(setting, text="Change la couleur de l'application", font=("Arial", 18), fg="#3C7092", background="#BBBBBB")
  setting_page_text.place (x=10, y=100)
-
+ # h = canvas.create_text(800, 40, text=heure_actuelle, fill="white", font='Helvetica 20 bold')
 def green():
  h = canvas.create_text(800, 40, text=heure_actuelle, fill="white", font='Helvetica 20 bold')
 def red():
