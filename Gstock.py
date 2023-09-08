@@ -131,14 +131,15 @@ def blue():
  canvas.create_rectangle(0, 70, 400, 0, fill="#5DADE2")
  Title = canvas.create_text(200, 40, text="Stock Net", fill="white", font='Helvetica 15 bold')
  canvas.create_line(400, 145, 1500, 145, fill="black", width=2)
- search = tk.Button(r, text='Chercher', width=10, background="#5DADE2", fg="white", command=on_submit, activebackground="#3D0E89", activeforeground="white")
+ search = tk.Button(r, text='Chercher', width=10, background="#5DADE2", fg="white", command=on_submit, activebackground="#4F91BD", activeforeground="white")
  search.place(x=1380, y=113)
- test1 = tk.Button(r, text='Test', width=10, background="#5DADE2", fg="white", activebackground="#3D0E89", activeforeground="white")
+ test1 = tk.Button(r, text='Test', width=10, background="#5DADE2", fg="white", activebackground="#4F91BD", activeforeground="white")
  test1.place(x=420, y=113)
- test2 = tk.Button(r, text='Test', width=10, background="#5DADE2", fg="white", activebackground="#3D0E89", activeforeground="white")
+ test2 = tk.Button(r, text='Test', width=10, background="#5DADE2", fg="white", activebackground="#4F91BD", activeforeground="white")
  test2.place(x=550, y=113)
- logout = tk.Button(r, text='Déconnexion', highlightbackground="#683FA9",  width=10, background="#4F91BD", fg="white", command=r.destroy, activebackground="#3C7092", activeforeground="white")
+ logout = tk.Button(r, text='Déconnexion', highlightbackground="#683FA9",  width=10, background="#4F91BD", fg="white", command=r.destroy, activebackground="#4F91BD", activeforeground="white")
  logout.place(x=1380, y=10)
+
  h = canvas.create_text(800, 40, text=heure_actuelle, fill="white", font='Helvetica 20 bold')
  a1= tk.Button(dashbroad, text='80', height=8, width=1, background="#3C7092", state='disabled')
  a2= tk.Button(dashbroad, text='100', height=10, width=1, background="#3C7092", state='disabled')
@@ -156,12 +157,14 @@ def blue():
  a6.place(x=700, y=70)
  a7.place(x=800, y=206)
  a8.place(x=900, y=223)
+
  dashbroadstatic1 = tk.Button(dashbroad, text='Total Piece : 3610', height=8, width=30,  background="#3C7092", state='disabled')
  dashbroadstatic2 = tk.Button(dashbroad, text='Nombre Des Commandes : 1500', height=8, width=30, background="#3C7092", state='disabled')
  dashbroadstatic3 = tk.Button(dashbroad, text='chiffre d"affaire : 366,500$', height=8, width=30, background="#3C7092", state='disabled')
  dashbroadstatic1.place(x=100, y=350)
  dashbroadstatic2.place(x=400, y=350)
  dashbroadstatic3.place(x=700, y=350)
+
  dashbroad_text = tk.Label(dashbroad, text="Tableau du Bord", font=("Arial", 24), fg="#3C7092", background="#BBBBBB")
  dashbroad_text.place (x=350, y=20)
  items_page_text = tk.Label(items, text="Contenu du page items ", font=("Arial", 24), fg="#3C7092", background="#BBBBBB")
@@ -174,6 +177,7 @@ def blue():
  exp_page_text.place (x=350, y=20)
  setting_page_text = tk.Label(setting, text="Parametre", font=("Arial", 24), fg="#3C7092", background="#BBBBBB")
  setting_page_text.place (x=350, y=20)
+
 def green():
  canvas.create_rectangle(400, 800, 1500, 0, fill="white")
  canvas.create_rectangle(400, 70, 1500, 0, fill="#72B62E")
@@ -280,18 +284,18 @@ test2 = tk.Button(r, text='Test', width=10, background="#683FA9", fg="white", ac
 test2.place(x=550, y=113)
 # button navbar a gauche vertical
 #tableau du bord
-dashbroad = tk.Button(r, text='Tableau du Bord', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=dashbroad_visibility)
+dashbroad = tk.Button(r, text='Tableau du Bord', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#C1C1FE", activeforeground="black", command=dashbroad_visibility)
 dashbroad.place(x=1, y=180)
 #Item list : afficher un page contien la list des produit dans la table (id,image,nom,prix,quantite)
-items = tk.Button(r, text='Liste des produits', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=item_visibility)
+items = tk.Button(r, text='Liste des produits', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#C1C1FE", activeforeground="black", command=item_visibility)
 items.place(x=1, y=230)
 #Button New items : ajouter un produit dans la table (id,image,nom,prix,quantite)
-news = tk.Button(r, text='Importer', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=news_visibility)
+news = tk.Button(r, text='Importer', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#C1C1FE", activeforeground="black", command=news_visibility)
 news.place(x=1, y=280)
 #export
-exp = tk.Button(r, text='Exporter', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=exp_visibility)
+exp = tk.Button(r, text='Exporter', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#C1C1FE", activeforeground="black", command=exp_visibility)
 exp.place(x=1, y=330)
-setting = tk.Button(r, text='Setting', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=settings_visibility)
+setting = tk.Button(r, text='Parametre', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#C1C1FE", activeforeground="black", command=settings_visibility)
 setting.place(x=1, y=700)
 #les pages
 dashbroad = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
@@ -312,7 +316,7 @@ doc_page_text = tk.Label(document, text="Contenu du page document", font=("Arial
 doc_page_text.place (x=350, y=20)
 exp_page_text = tk.Label(exp, text="Vente du Nouveau Produit", font=("Arial", 24), fg="#683FA9", background="#BBBBBB")
 exp_page_text.place (x=350, y=20)
-setting_page_text = tk.Label(setting, text="Contenu du page setting", font=("Arial", 24), fg="#683FA9", background="#BBBBBB")
+setting_page_text = tk.Label(setting, text="Parametre", font=("Arial", 24), fg="#683FA9", background="#BBBBBB")
 setting_page_text.place (x=350, y=20)
 #footer du page
 footer_page_text = tk.Label(canvas, text="This application Devlopped by Kefi Maher using Python 3.8.10 ", font=("Arial", 10), fg="white", background="#3E4146")
