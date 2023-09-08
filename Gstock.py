@@ -178,6 +178,29 @@ def blue():
  setting_page_text = tk.Label(setting, text="Parametre", font=("Arial", 24), fg="#3C7092", background="#BBBBBB")
  setting_page_text.place (x=350, y=20)
 
+ produitajouter = tk.Label(exp, text="Produit    :", font=("Arial", 18), fg="#3C7092", background="#BBBBBB")
+ produitajouter.place(x=400, y=150)
+ #quantite
+ quantite = tk.Label(exp, text="Quantite  :", font=("Arial", 18), fg="#3C7092", background="#BBBBBB")
+ quantite.place(x=400, y=200)
+#prix
+ prix = tk.Label(exp, text="Prix         :", font=("Arial", 18), fg="#3C7092", background="#BBBBBB")
+ prix.place(x=400, y=250)
+
+
+ #numero du facture
+ numerofacture = tk.Label(news, text="N facture :", font=("Arial", 18), fg="#3C7092", background="#BBBBBB")
+ numerofacture.place(x=400, y=150)
+ #ajouter produit
+ produitajouter = tk.Label(news, text="Produit    :", font=("Arial", 18), fg="#3C7092", background="#BBBBBB")
+ produitajouter.place(x=400, y=200)
+ #quantite
+ quantite = tk.Label(news, text="Quantite  :", font=("Arial", 18), fg="#3C7092", background="#BBBBBB")
+ quantite.place(x=400, y=250)
+ prix = tk.Label(exp, text="Prix         :", font=("Arial", 18), fg="#3C7092", background="#BBBBBB")
+ prix.place(x=400, y=250)
+
+
 def green():
  canvas.create_rectangle(400, 800, 1500, 0, fill="white")
  canvas.create_rectangle(400, 70, 1500, 0, fill="#72B62E")
