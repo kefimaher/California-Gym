@@ -368,12 +368,8 @@ s2.place(x=100, y=150)
 s3.place(x=200, y=150)
 s4.place(x=300, y=150)
 #date
-t = time(12, 50, 59)
 date = datetime.date.today()
-date = canvas.create_text(200, 750, text=date, fill="white", font='Helvetica 14 bold')
-heure = canvas.create_text(800, 40, text=t.hour, fill="white", font='Helvetica 20 bold')
-deuxpoint = canvas.create_text(820, 40, text=":", fill="white", font='Helvetica 20 bold')
-menute = canvas.create_text(840, 40, text=t.minute, fill="white", font='Helvetica 20 bold')
+date = canvas.create_text(800, 40, text=date, fill="white", font='Helvetica 16 bold')
 canvas.pack()
 r.mainloop()
 
