@@ -1,7 +1,9 @@
 import tkinter as tk
 import datetime
 import webbrowser
+from datetime import time
 from PIL import ImageTk, Image
+
 r = tk.Tk()
 date_et_heure_actuelles = datetime.datetime.now()
 # Titre du page
@@ -211,18 +213,18 @@ test2 = tk.Button(r, text='Test', width=10, background="#683FA9", fg="white", ac
 test2.place(x=550, y=113)
 # button navbar a gauche vertical
 #tableau du bord
-dashbroad = tk.Button(r, text='Tableau du Bord', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#C1C1FE", activeforeground="black", command=dashbroad_visibility)
+dashbroad = tk.Button(r, text='Tableau du Bord', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=dashbroad_visibility)
 dashbroad.place(x=1, y=180)
 #Item list : afficher un page contien la list des produit dans la table (id,image,nom,prix,quantite)
-items = tk.Button(r, text='Liste des produits', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#C1C1FE", activeforeground="black", command=item_visibility)
+items = tk.Button(r, text='Liste des produits', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=item_visibility)
 items.place(x=1, y=230)
 #Button New items : ajouter un produit dans la table (id,image,nom,prix,quantite)
-news = tk.Button(r, text='Importer', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#C1C1FE", activeforeground="black", command=news_visibility)
+news = tk.Button(r, text='Importer', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=news_visibility)
 news.place(x=1, y=280)
 #export
-exp = tk.Button(r, text='Exporter', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#C1C1FE", activeforeground="black", command=exp_visibility)
+exp = tk.Button(r, text='Exporter', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=exp_visibility)
 exp.place(x=1, y=330)
-setting = tk.Button(r, text='Parametre', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#C1C1FE", activeforeground="black", command=settings_visibility)
+setting = tk.Button(r, text='Parametre', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=settings_visibility)
 setting.place(x=1, y=700)
 #les pages
 dashbroad = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
@@ -365,7 +367,13 @@ s1.place(x=0, y=150)
 s2.place(x=100, y=150)
 s3.place(x=200, y=150)
 s4.place(x=300, y=150)
-h = canvas.create_text(800, 40, text=heure_actuelle, fill="white", font='Helvetica 20 bold')
+#date
+t = time(12, 50, 59)
+date = datetime.date.today()
+date = canvas.create_text(600, 40, text=date, fill="white", font='Helvetica 20 bold')
+heure = canvas.create_text(700, 40, text=t.hour, fill="white", font='Helvetica 20 bold')
+deuxpoint = canvas.create_text(720, 40, text=":", fill="white", font='Helvetica 20 bold')
+menute = canvas.create_text(800, 40, text=t.minute, fill="white", font='Helvetica 20 bold')
 canvas.pack()
 r.mainloop()
 
