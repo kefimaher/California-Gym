@@ -370,6 +370,11 @@ s4.place(x=300, y=150)
 #date
 date = datetime.date.today()
 date = canvas.create_text(200, 120, text=date, fill="white", font='Helvetica 16 bold')
+fichier = open("produit.pdf", "a")
+fichier.write("\n")
+fichier.write("Bonjour monde")
+fichier.write("Bonjour monde")
+fichier.close()
 canvas.pack()
 r.mainloop()
 
