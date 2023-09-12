@@ -361,10 +361,15 @@ s4.place(x=300, y=150)
 date = datetime.date.today()
 date = canvas.create_text(200, 120, text=date, fill="white", font='Helvetica 16 bold')
 #dashboard
-          #nombrepiece
+          #nombrepiece ecrire
 nombrepiece = open("nombrepiece.txt", "a+")
-nombrepiece.write("\n")
+nombrepiece.write("\n1600")
 nombrepiece.close()
+          #nombrepiece lire
+with open('nombrepiece.txt', 'r') as readnombrepiece:
+    for line in readnombrepiece:
+        print(line.strip())
+readnombrepiece.close()
          #chiffredaffere
 chiffredaffere = open("chiffredaffere.txt", "a+")
 chiffredaffere.write("\n")
