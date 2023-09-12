@@ -369,7 +369,7 @@ s3.place(x=200, y=150)
 s4.place(x=300, y=150)
 #date
 date = datetime.date.today()
-date = canvas.create_text(800, 40, text=date, fill="white", font='Helvetica 16 bold')
+date = canvas.create_text(200, 120, text=date, fill="white", font='Helvetica 16 bold')
 canvas.pack()
 r.mainloop()
 
