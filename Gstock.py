@@ -360,10 +360,19 @@ s4.place(x=300, y=150)
 #date
 date = datetime.date.today()
 date = canvas.create_text(200, 120, text=date, fill="white", font='Helvetica 16 bold')
-#fishier chiffre d'affer
-dashboard = open("dashboard.txt", "a+")
-dashboard.write("\n")
-dashboard.close()
+#dashboard
+          #nombrepiece
+nombrepiece = open("nombrepiece.txt", "a+")
+nombrepiece.write("\n")
+nombrepiece.close()
+         #chiffredaffere
+chiffredaffere = open("chiffredaffere.txt", "a+")
+chiffredaffere.write("\n")
+chiffredaffere.close()
+        #nombrcommende
+nombrcommende = open("nombrcommende.txt", "a+")
+nombrcommende.write("\n")
+nombrcommende.close()
 canvas.pack()
 r.mainloop()
 
