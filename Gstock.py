@@ -1,9 +1,5 @@
 import tkinter as tk
 import datetime
-import webbrowser
-from datetime import time
-from PIL import ImageTk, Image
-
 r = tk.Tk()
 date_et_heure_actuelles = datetime.datetime.now()
 # Titre du page
@@ -348,12 +344,6 @@ a5.place(x=600, y=108)
 a6.place(x=700, y=70)
 a7.place(x=800, y=206)
 a8.place(x=900, y=223)
-image = Image.open("7.jpg")
-nouvelle_taille = (500, 500)
-image_redimensionnee = image.resize(nouvelle_taille)
-image_tk = ImageTk.PhotoImage(image_redimensionnee)
-label_image = tk.Label(r, image=image_tk)
-#label_image.place(x=400, y=400)
 logout = tk.Button(r, text='Déconnexion', highlightbackground="#683FA9",  width=10, background="#683FA9", fg="white", command=r.destroy, activebackground="#3D0E89", activeforeground="white")
 logout.place(x=1380, y=10)
 #page setting
@@ -370,9 +360,8 @@ s4.place(x=300, y=150)
 #date
 date = datetime.date.today()
 date = canvas.create_text(200, 120, text=date, fill="white", font='Helvetica 16 bold')
-
+#fishier chiffre d'affer
 fichier = open("produit.txt", "a")
-fichier = open("chiffredaffere.txt", "r+")
 fichier.write("\n")
 fichier.close()
 canvas.pack()
