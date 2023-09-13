@@ -4,6 +4,26 @@ r = tk.Tk()
 date_et_heure_actuelles = datetime.datetime.now()
 # Titre du page
 r.title('Stock Net')
+#dashboard
+#nombrepiece ecrire
+nombrepiece = open("nombrepiece.txt", "a+")
+#nombrepiece.write("\n1600")
+nombrepiece.close()
+#nombrepiece lire
+with open('nombrepiece.txt', 'r') as readnombrepiece:
+    for line in readnombrepiece:
+        print(line.strip())
+readnombrepiece.close()
+         #chiffredaffere
+chiffredaffere = open("chiffredaffere.txt", "a+")
+chiffredaffere.write("\n")
+chiffredaffereconverte = str(chiffredaffere)
+
+chiffredaffere.close()
+        #nombrcommende
+nombrcommende = open("nombrcommende.txt", "a+")
+nombrcommende.write("\n")
+nombrcommende.close()
 #les lien des page
 def dashbroad_visibility():
  dashbroad.place(x=400, y=145)
@@ -322,7 +342,7 @@ search_zone.bind("<FocusIn>", on_entry_click)
 #rectangele du tableu du bord
 dashbroadstatic1 = tk.Button(dashbroad, text='Total Piece : 3610', height=8, width=30,  background="#683FA9", state='disabled')
 dashbroadstatic2 = tk.Button(dashbroad, text='Nombre Des Commandes : 1500', height=8, width=30, background="#683FA9", state='disabled')
-dashbroadstatic3 = tk.Button(dashbroad, text='chiffre d"affaire : 366,500$', height=8, width=30, background="#683FA9", state='disabled')
+dashbroadstatic3 = tk.Button(dashbroad, text='chiffre d"affaire :'+chiffredaffereconverte, height=8, width=30, background="#683FA9", state='disabled')
 produitarecherche  = tk.Entry(dashbroad, background="#BBBBBB", bd="0", fg="#683FA9", font=("Arial", 16), highlightbackground="#BBBBBB")
 dashbroadstatic1.place(x=100, y=350)
 dashbroadstatic2.place(x=400, y=350)
@@ -360,24 +380,6 @@ s4.place(x=300, y=150)
 #date
 date = datetime.date.today()
 date = canvas.create_text(200, 120, text=date, fill="white", font='Helvetica 16 bold')
-#dashboard
-#nombrepiece ecrire
-nombrepiece = open("nombrepiece.txt", "a+")
-#nombrepiece.write("\n1600")
-nombrepiece.close()
-#nombrepiece lire
-with open('nombrepiece.txt', 'r') as readnombrepiece:
-    for line in readnombrepiece:
-        print(line.strip())
-readnombrepiece.close()
-         #chiffredaffere
-chiffredaffere = open("chiffredaffere.txt", "a+")
-chiffredaffere.write("\n")
-chiffredaffere.close()
-        #nombrcommende
-nombrcommende = open("nombrcommende.txt", "a+")
-nombrcommende.write("\n")
-nombrcommende.close()
 canvas.pack()
 r.mainloop()
 
