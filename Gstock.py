@@ -367,7 +367,7 @@ nombrepiece = open("nombrepiece.txt", "a+")
 nombrepiece.close()
 #nombrepiece lire
 with open('nombrepiece.txt', 'r') as readnombrepiece:
-    for line in readnombrepiece[-1:]:
+    for line in readnombrepiece:
         print(line.strip())
 readnombrepiece.close()
          #chiffredaffere
