@@ -12,19 +12,9 @@ nombrepiece.close()
 #nombrepiece lire
 with open('nombrepiece.txt', 'r') as readnombrepiece:
     for line in readnombrepiece:
-        print(line.strip())
+        nbr=line.strip()
+        print(nbr)
 readnombrepiece.close()
-         #chiffredaffere
-chiffredaffere = open("chiffredaffere.txt", "a+")
-chiffredaffere.write("\n")
-chiffredaffereconverte = str(chiffredaffere)
-
-chiffredaffere.close()
-        #nombrcommende
-nombrcommende = open("nombrcommende.txt", "a+")
-nombrcommende.write("\n")
-nombrcommende.close()
-#les lien des page
 def dashbroad_visibility():
  dashbroad.place(x=400, y=145)
  setting.place(x=1500, y=800)
@@ -644,7 +634,7 @@ search_zone.bind("<FocusIn>", on_entry_click)
 #rectangele du tableu du bord
 dashbroadstatic1 = tk.Button(dashbroad, text='Total Piece : 3610', height=8, width=30,  background="#683FA9", state='disabled')
 dashbroadstatic2 = tk.Button(dashbroad, text='Nombre Des Commandes : 1500', height=8, width=30, background="#683FA9", state='disabled')
-dashbroadstatic3 = tk.Button(dashbroad, text='chiffre d"affaire :'+chiffredaffereconverte, height=8, width=30, background="#683FA9", state='disabled')
+dashbroadstatic3 = tk.Button(dashbroad, text='chiffre d"affaire :'+nbr, height=8, width=30, background="#683FA9", state='disabled')
 produitarecherche  = tk.Entry(dashbroad, background="#BBBBBB", bd="0", fg="#683FA9", font=("Arial", 16), highlightbackground="#BBBBBB")
 dashbroadstatic1.place(x=100, y=350)
 dashbroadstatic2.place(x=400, y=350)
