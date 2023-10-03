@@ -6,7 +6,7 @@ date_et_heure_actuelles = datetime.datetime.now()
 r.title('Stock Net')
 #importer
 produit = open("produit.txt", "a+")
-produit.write("\n1600")
+produit.write("\nvise         20           1.000")
 produit.close()
 #nombrepiece lire
 def dashbroad_visibility():
@@ -625,7 +625,7 @@ search_zone.bind("<FocusIn>", on_entry_click)
 #rectangele du tableu du bord
 dashbroadstatic1 = tk.Button(dashbroad, text='Total Piece : 3610', height=8, width=30,  background="#683FA9", state='disabled')
 dashbroadstatic2 = tk.Button(dashbroad, text='Nombre Des Commandes : 1500', height=8, width=30, background="#683FA9", state='disabled')
-dashbroadstatic3 = tk.Button(dashbroad, text='chiffre d"affaire :'+nbr, height=8, width=30, background="#683FA9", state='disabled')
+dashbroadstatic3 = tk.Button(dashbroad, text='chiffre d"affaire :', height=8, width=30, background="#683FA9", state='disabled')
 produitarecherche  = tk.Entry(dashbroad, background="#BBBBBB", bd="0", fg="#683FA9", font=("Arial", 16), highlightbackground="#BBBBBB")
 dashbroadstatic1.place(x=100, y=350)
 dashbroadstatic2.place(x=400, y=350)
