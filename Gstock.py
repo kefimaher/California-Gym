@@ -4,17 +4,11 @@ r = tk.Tk()
 date_et_heure_actuelles = datetime.datetime.now()
 # Titre du page
 r.title('Stock Net')
-#dashboard
-#nombrepiece ecrire
-nombrepiece = open("nombrepiece.txt", "a+")
-#nombrepiece.write("\n1600")
-nombrepiece.close()
+#importer
+produit = open("produit.txt", "a+")
+produit.write("\n1600")
+produit.close()
 #nombrepiece lire
-with open('nombrepiece.txt', 'r') as readnombrepiece:
-    for line in readnombrepiece:
-        nbr=line.strip()
-        print(nbr)
-readnombrepiece.close()
 def dashbroad_visibility():
  dashbroad.place(x=400, y=145)
  setting.place(x=1500, y=800)
