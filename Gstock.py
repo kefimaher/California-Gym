@@ -481,19 +481,21 @@ def orange():
  setting_page_text = tk.Label(setting, text="Change la couleur de l'application", font=("Arial", 18), fg="#DE9B1C", background="#BBBBBB")
  setting_page_text.place (x=10, y=100)
 def exportfonction():
+
     produitex = exportproduit.get()
     quantiteex = exportquantite.get()
     prixex = exportprix.get()
-    # produitarecherche.delete(0, "end")
-    print(produitex);
-    print(quantiteex);
-    print(prixex);
-    xexport = open("export.txt", "a+")
-    xexport.write("\n"+produitex+"                   "+quantiteex+"                    "+prixex);
-    xexport.close()
-   # if ((entered_text!="chercher un produit")and(entered_text!="")):
-    #   produitarecherche.insert(10, entered_text)
- #      produitarecherche.place(x=290, y=604)
+    if ((produitex!="")and(quantiteex!="")and(prixex!="")):
+     print(produitex);
+     print(quantiteex);
+     print(prixex);
+     xexport = open("export.txt", "a+")
+     xexport.write("\n"+produitex+"                   "+quantiteex+"                    "+prixex);
+     xexport.close()
+def resetexport():
+    exportproduit.delete(0, tk.END)
+    exportquantite.delete(0, tk.END)
+    exportprix.delete(0, tk.END)
 #canvas
 canvas = tk.Canvas(r, width=1500, height=800, background='grey')
 # line
@@ -608,21 +610,21 @@ prix = tk.Label(exp, text="Prix         :", font=("Arial", 18), fg="#683FA9", ba
 prix.place(x=400, y=250)
 #produit
 exportproduit = tk.Entry(exp)
-exportproduit.insert(10, "exportproduit")
+exportproduit.insert(10, "")
 exportproduit.place(x=550, y=155)
 #quantite
 exportquantite = tk.Entry(exp)
-exportquantite.insert(10, "exportquantite")
+exportquantite.insert(10, "")
 exportquantite.place(x=550, y=205)
 #prix
 exportprix = tk.Entry(exp)
-exportprix.insert(10, "exportprix")
+exportprix.insert(10, "")
 exportprix.place(x=550, y=255)
 #butoon ajouter
 produitajouterbutton = tk.Button(exp, text='Ajouter', width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white", command=exportfonction)
 produitajouterbutton.place(x=200, y=500)
 #button annuler
-produitannulerbutton = tk.Button(exp, text='Annuler', width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white", command=reset)
+produitannulerbutton = tk.Button(exp, text='Annuler', width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white", command=resetexport)
 produitannulerbutton.place(x=600, y=500)
 #page rechrcher
 #serach zone button
