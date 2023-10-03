@@ -484,6 +484,14 @@ def orange():
  produitannulerbutton.place(x=600, y=500)
  setting_page_text = tk.Label(setting, text="Change la couleur de l'application", font=("Arial", 18), fg="#DE9B1C", background="#BBBBBB")
  setting_page_text.place (x=10, y=100)
+def exportfonction():
+    produit = exportproduit.get()
+    quantite = exportquantite.get()
+    prix = exportprix.get()
+    produitarecherche.delete(0, "end")
+   # if ((entered_text!="chercher un produit")and(entered_text!="")):
+    #   produitarecherche.insert(10, entered_text)
+ #      produitarecherche.place(x=290, y=604)
 #canvas
 canvas = tk.Canvas(r, width=1500, height=800, background='grey')
 # line
