@@ -4,10 +4,6 @@ r = tk.Tk()
 date_et_heure_actuelles = datetime.datetime.now()
 # Titre du page
 r.title('Stock Net')
-#importer
-produit = open("produit.txt", "a+")
-produit.write("\nN1652      vise         20           1.000")
-produit.close()
 #nombrepiece lire
 def dashbroad_visibility():
  dashbroad.place(x=400, y=145)
@@ -485,10 +481,16 @@ def orange():
  setting_page_text = tk.Label(setting, text="Change la couleur de l'application", font=("Arial", 18), fg="#DE9B1C", background="#BBBBBB")
  setting_page_text.place (x=10, y=100)
 def exportfonction():
-    produit = exportproduit.get()
-    quantite = exportquantite.get()
-    prix = exportprix.get()
-    produitarecherche.delete(0, "end")
+    produitex = exportproduit.get()
+    quantiteex = exportquantite.get()
+    prixex = exportprix.get()
+    # produitarecherche.delete(0, "end")
+    print(produitex);
+    print(quantiteex);
+    print(prixex);
+    xexport = open("export.txt", "a+")
+    xexport.write("\n"+produitex+"                   "+quantiteex+"                    "+prixex);
+    xexport.close()
    # if ((entered_text!="chercher un produit")and(entered_text!="")):
     #   produitarecherche.insert(10, entered_text)
  #      produitarecherche.place(x=290, y=604)
@@ -617,7 +619,7 @@ exportprix = tk.Entry(exp)
 exportprix.insert(10, "exportprix")
 exportprix.place(x=550, y=255)
 #butoon ajouter
-produitajouterbutton = tk.Button(exp, text='Ajouter', width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white")
+produitajouterbutton = tk.Button(exp, text='Ajouter', width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white", command=exportfonction)
 produitajouterbutton.place(x=200, y=500)
 #button annuler
 produitannulerbutton = tk.Button(exp, text='Annuler', width=30, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white", command=reset)

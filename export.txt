@@ -1,0 +1,5 @@
+Produit                   Quantite                  Prix
+exportproduit          exportquantite         exportprix
+Vise          700         1,000
+Vise          700         1,000
+eeeeee                   eeeee                    11
