@@ -172,6 +172,15 @@ def violette():
  setting_page_text = tk.Label(setting, text="Change la couleur de l'application", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
  setting_page_text.place (x=10, y=100)
 def green():
+ #les pages
+ dashbroad = tk.Frame(canvas, width=1500, height=800, background='black')
+ dashbroad.place(x=400, y=145)
+ setting = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
+ items = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
+ exp= tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
+ document = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
+ news = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
+
  canvas.create_rectangle(400, 800, 1500, 0, fill="white")
  canvas.create_rectangle(400, 70, 1500, 0, fill="#72B62E")
  canvas.create_rectangle(0, 70, 400, 0, fill="#72B62E")
@@ -185,7 +194,7 @@ def green():
  test2.place(x=550, y=113)
  logout = tk.Button(r, text='Déconnexion', highlightbackground="#72B62E",  width=10, background="#72B62E", fg="white", command=r.destroy, activebackground="#72B62E", activeforeground="white")
  logout.place(x=1380, y=10)
- a1= tk.Button(dashbroad, text='80', height=8, width=1, background="#72B62E", state='disabled')
+ a1= tk.Button(dashbroad, text='80', height=8, width=1, background="#72B62E", fg="white")
  a2= tk.Button(dashbroad, text='100', height=10, width=1, background="#72B62E", state='disabled')
  a3= tk.Button(dashbroad, text='30', height=3, width=1, background="#72B62E", state='disabled')
  a4= tk.Button(dashbroad, text='50', height=5, width=1, background="#72B62E", state='disabled')
@@ -248,8 +257,9 @@ def green():
  produitannulerbutton.place(x=600, y=500)
  setting_page_text = tk.Label(setting, text="Change la couleur de l'application", font=("Arial", 18), fg="#72B62E", background="#BBBBBB")
  setting_page_text.place (x=10, y=100)
+ dashbroad_text = tk.Label(dashbroad, text="Tableau du Bord", font=("Arial", 24), fg="white", background="#BBBBBB")
+ dashbroad_text.place (x=350, y=20)
 def exportfonction():
-
     produitex = exportproduit.get()
     quantiteex = exportquantite.get()
     prixex = exportprix.get()
