@@ -99,7 +99,7 @@ canvas.create_rectangle(0, 800, 400, 0, fill="#3E4146")
 # page content
 canvas.create_rectangle(400, 800, 1500, 0, fill="white")
 # barre de navigation a haut a droite
-canvas.create_rectangle(400, 70, 1500, 0, fill="#55259F")
+canvas.create_rectangle(400, 70, 1500, 0, fill="black")
 # barre de navigation a haut a droite
 canvas.create_rectangle(0, 70, 400, 0, fill="#55259F")
 canvas.create_line(400, 145, 1500, 145, fill="#492089", width=2)
