@@ -20,14 +20,6 @@ def dashbroad_visibility():
  search_zone.delete(0, "end")
  search_zone.insert(0, "")
  produitarecherche.delete(0, "end")
- a1.place(x=200, y=125)
- a2.place(x=300, y=90)
- a3.place(x=400, y=208)
- a4.place(x=500, y=176)
- a5.place(x=600, y=108)
- a6.place(x=700, y=70)
- a7.place(x=800, y=206)
- a8.place(x=900, y=223)
 def item_visibility():
  items.place(x=400, y=145)
  setting.place(x=1500, y=800)
@@ -77,14 +69,6 @@ def on_submit():
        dashbroadstatic1.place(x=100, y=350)
        dashbroadstatic2.place(x=400, y=350)
        dashbroadstatic3.place(x=700, y=350)
-       a1.place(x=1000, y=1000)
-       a2.place(x=1000, y=1000)
-       a3.place(x=1000, y=1000)
-       a4.place(x=1000, y=1000)
-       a5.place(x=1000, y=1000)
-       a6.place(x=1000, y=1000)
-       a7.place(x=1000, y=1000)
-       a8.place(x=1000, y=1000)
 def on_entry_click(event):
     if search_zone.get() == "chercher un personne":
        search_zone.delete(0, "end")  # Delete current text in the entry
