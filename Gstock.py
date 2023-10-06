@@ -3,7 +3,7 @@ import datetime
 r = tk.Tk()
 date_et_heure_actuelles = datetime.datetime.now()
 # Titre du page
-r.title('Fitness Zone')
+r.title('California Gym')
 #nombrepiece lire
 def dashbroad_visibility():
  dashbroad.place(x=400, y=145)
@@ -119,7 +119,7 @@ canvas.create_rectangle(400, 70, 1500, 0, fill="#55259F")
 # barre de navigation a haut a droite
 canvas.create_rectangle(0, 70, 400, 0, fill="#55259F")
 canvas.create_line(400, 145, 1500, 145, fill="#492089", width=2)
-Title = canvas.create_text(200, 40, text="Fitness Zone", fill="white", font='Helvetica 15 bold')
+Title = canvas.create_text(200, 40, text="California Gym", fill="white", font='Helvetica 15 bold')
 #date et heure
 heure_actuelle = date_et_heure_actuelles.now()
 minutes_actuelles = date_et_heure_actuelles.minute
@@ -246,8 +246,8 @@ r2 = tk.Label(dashbroad, text="Nombre des Pièce Trouve :", font=("Arial", 18), 
 search_zone.bind("<FocusIn>", on_entry_click)
 #rectangele du tableu du bord
 dashbroadstatic1 = tk.Button(dashbroad, text='Nombre des personne abonnés : 300', height=8, width=30,  background="#683FA9", state='disabled')
-dashbroadstatic2 = tk.Button(dashbroad, text='Nombre Des Commandes : 1500', height=8, width=30, background="#683FA9", state='disabled')
-dashbroadstatic3 = tk.Button(dashbroad, text='chiffre d"affaire :', height=8, width=30, background="#683FA9", state='disabled')
+dashbroadstatic2 = tk.Button(dashbroad, text='Personnes dans la salle : 1500', height=8, width=30, background="#683FA9", state='disabled')
+dashbroadstatic3 = tk.Button(dashbroad, text='', height=8, width=30, background="#683FA9", state='disabled')
 produitarecherche  = tk.Entry(dashbroad, background="#BBBBBB", bd="0", fg="#683FA9", font=("Arial", 16), highlightbackground="#BBBBBB")
 dashbroadstatic1.place(x=100, y=350)
 dashbroadstatic2.place(x=400, y=350)
