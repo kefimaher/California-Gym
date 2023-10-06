@@ -3,7 +3,7 @@ import datetime
 r = tk.Tk()
 date_et_heure_actuelles = datetime.datetime.now()
 # Titre du page
-r.title('California Gym')
+r.title('G-Y-M')
 #nombrepiece lire
 def dashbroad_visibility():
  dashbroad.place(x=400, y=145)
@@ -119,7 +119,7 @@ canvas.create_rectangle(400, 70, 1500, 0, fill="#55259F")
 # barre de navigation a haut a droite
 canvas.create_rectangle(0, 70, 400, 0, fill="#55259F")
 canvas.create_line(400, 145, 1500, 145, fill="#492089", width=2)
-Title = canvas.create_text(200, 40, text="California Gym", fill="white", font='Helvetica 15 bold')
+Title = canvas.create_text(200, 40, text="G-Y-M", fill="white", font='Helvetica 15 bold')
 #date et heure
 heure_actuelle = date_et_heure_actuelles.now()
 minutes_actuelles = date_et_heure_actuelles.minute
@@ -253,22 +253,6 @@ dashbroadstatic1.place(x=100, y=350)
 dashbroadstatic2.place(x=400, y=350)
 dashbroadstatic3.place(x=700, y=350)
 #xyz
-a1= tk.Button(dashbroad, text='80', height=8, width=1, background="#683FA9", state='disabled')
-a2= tk.Button(dashbroad, text='100', height=10, width=1, background="#683FA9", state='disabled')
-a3= tk.Button(dashbroad, text='30', height=3, width=1, background="#683FA9", state='disabled')
-a4= tk.Button(dashbroad, text='50', height=5, width=1, background="#683FA9", state='disabled')
-a5= tk.Button(dashbroad, text='90', height=9, width=1, background="#683FA9", state='disabled')
-a6= tk.Button(dashbroad, text='110', height=11, width=1, background="#683FA9", state='disabled')
-a7= tk.Button(dashbroad, text='30', height=3, width=1, background="#683FA9", state='disabled')
-a8= tk.Button(dashbroad, text='20', height=2, width=1,  background="#683FA9", state='disabled')
-a1.place(x=200, y=125)
-a2.place(x=300, y=90)
-a3.place(x=400, y=208)
-a4.place(x=500, y=176)
-a5.place(x=600, y=108)
-a6.place(x=700, y=70)
-a7.place(x=800, y=206)
-a8.place(x=900, y=223)
 logout = tk.Button(r, text='Déconnexion', highlightbackground="#683FA9",  width=10, background="#683FA9", fg="white", command=r.destroy, activebackground="#3D0E89", activeforeground="white")
 logout.place(x=1380, y=10)
 #page setting
