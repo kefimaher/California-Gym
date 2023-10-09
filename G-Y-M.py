@@ -101,7 +101,7 @@ canvas.create_rectangle(400, 800, 1500, 0, fill="white")
 # barre de navigation a haut a droite
 canvas.create_rectangle(400, 70, 1500, 0, fill="black")
 # barre de navigation a haut a droite
-canvas.create_rectangle(0, 70, 400, 0, fill="#FFC300")
+canvas.create_rectangle(0, 70, 400, 0, fill="#84860F")
 canvas.create_line(400, 145, 1500, 145, fill="#492089", width=2)
 Title = canvas.create_text(200, 40, text="Black G-Y-M", fill="white", font='Helvetica 15 bold')
 #date et heure
@@ -237,7 +237,7 @@ dashbroadstatic1.place(x=100, y=350)
 dashbroadstatic2.place(x=400, y=350)
 dashbroadstatic3.place(x=700, y=350)
 #xyz
-logout = tk.Button(r, text='Déconnexion', highlightbackground="#683FA9",  width=10, background="#683FA9", fg="white", command=r.destroy, activebackground="#3D0E89", activeforeground="white")
+logout = tk.Button(r, text='Déconnexion', highlightbackground="#DFD800", font=("Rupee", 12),  width=10, background="#FFF700", fg="black", command=r.destroy, activebackground="#DFD800", activeforeground="black")
 logout.place(x=1380, y=10)
 #page setting
 
