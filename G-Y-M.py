@@ -97,40 +97,40 @@ canvas.create_line(400, 0, 400, 800)
 # barre de navigation a gauche
 canvas.create_rectangle(0, 800, 400, 0, fill="#3E4146")
 # page content
-canvas.create_rectangle(400, 800, 1500, 0, fill="white")
+canvas.create_rectangle(400, 800, 1500, 0, fill="#3E4146")
 # barre de navigation a haut a droite
 canvas.create_rectangle(400, 70, 1500, 0, fill="black")
 # barre de navigation a haut a droite
-canvas.create_rectangle(0, 70, 400, 0, fill="#84860F")
+canvas.create_rectangle(0, 70, 400, 0, fill="#D3CD00")
 canvas.create_line(400, 145, 1500, 145, fill="#492089", width=2)
-Title = canvas.create_text(200, 40, text="Black G-Y-M", fill="white", font='Helvetica 15 bold')
+Title = canvas.create_text(200, 40, text="Black G-Y-M", fill="black", font='Helvetica 15 bold')
 #date et heure
 heure_actuelle = date_et_heure_actuelles.now()
 minutes_actuelles = date_et_heure_actuelles.minute
 date_actuelle = date_et_heure_actuelles.date()
 # button name + width
-search = tk.Button(r, text='Chercher', width=10, background="#683FA9", fg="white", command=on_submit, activebackground="#3D0E89", activeforeground="white")
+search = tk.Button(r, text='Chercher', width=10, background="#D3CD00", fg="black", command=on_submit, activebackground="#959100", activeforeground="black")
 search.place(x=1380, y=113)
 # button name + width
-test1 = tk.Button(r, text='Test', width=10, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white")
+test1 = tk.Button(r, text='Test', width=10, background="#D3CD00", fg="black", activebackground="#959100", activeforeground="black")
 test1.place(x=420, y=113)
 # button name + width
-test2 = tk.Button(r, text='Test', width=10, background="#683FA9", fg="white", activebackground="#3D0E89", activeforeground="white")
+test2 = tk.Button(r, text='Test', width=10, background="#D3CD00", fg="black", activebackground="#959100", activeforeground="black")
 test2.place(x=550, y=113)
 # button navbar a gauche vertical
 #tableau du bord
-dashbroad = tk.Button(r, text='Tableau du Bord', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=dashbroad_visibility)
+dashbroad = tk.Button(r, text='Tableau du Bord', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#D3CD00", activeforeground="black", command=dashbroad_visibility)
 dashbroad.place(x=1, y=180)
 #Item list : afficher un page contien la list des produit dans la table (id,image,nom,prix,quantite)
-items = tk.Button(r, text='Liste des personnes', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=item_visibility)
+items = tk.Button(r, text='Liste des personnes', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#D3CD00", activeforeground="black", command=item_visibility)
 items.place(x=1, y=230)
 #Button New items : ajouter un produit dans la table (id,image,nom,prix,quantite)
-news = tk.Button(r, text='Ajouter un presonne', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=news_visibility)
+news = tk.Button(r, text='Ajouter un presonne', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#D3CD00", activeforeground="black", command=news_visibility)
 news.place(x=1, y=280)
 #export
-exp = tk.Button(r, text='Exporter', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=exp_visibility)
+exp = tk.Button(r, text='Exporter', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#D3CD00", activeforeground="black", command=exp_visibility)
 exp.place(x=1, y=330)
-setting = tk.Button(r, text='Parametre', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#683FA9", activeforeground="white", command=settings_visibility)
+setting = tk.Button(r, text='Parametre', width=46, background="#3E4146", fg="white", highlightbackground="#3E4146", activebackground="#D3CD00", activeforeground="black", command=settings_visibility)
 setting.place(x=1, y=700)
 #les pages
 dashbroad = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
@@ -237,13 +237,13 @@ dashbroadstatic1.place(x=100, y=350)
 dashbroadstatic2.place(x=400, y=350)
 dashbroadstatic3.place(x=700, y=350)
 #xyz
-logout = tk.Button(r, text='Déconnexion', highlightbackground="#DFD800", font=("Rupee", 12),  width=10, background="#FFF700", fg="black", command=r.destroy, activebackground="#DFD800", activeforeground="black")
-logout.place(x=1380, y=10)
+logout = tk.Button(r, text='Déconnexion', highlightbackground="#DFD800", font=("Helvetica 15 bold", 10),  width=10, background="#D3CD00", fg="black", command=r.destroy, activebackground="#D3CD00", activeforeground="black")
+logout.place(x=1380, y=20)
 #page setting
 
 #date
 date = datetime.date.today()
-date = canvas.create_text(200, 120, text=date, fill="white", font='Helvetica 16 bold')
+date = canvas.create_text(200, 120, text=date, fill="white", font='Helvetica 15 bold')
 canvas.pack()
 r.mainloop()
 
