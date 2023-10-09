@@ -101,7 +101,7 @@ canvas.create_rectangle(400, 800, 1500, 0, fill="white")
 # barre de navigation a haut a droite
 canvas.create_rectangle(400, 70, 1500, 0, fill="black")
 # barre de navigation a haut a droite
-canvas.create_rectangle(0, 70, 400, 0, fill="#55259F")
+canvas.create_rectangle(0, 70, 400, 0, fill="#FFC300")
 canvas.create_line(400, 145, 1500, 145, fill="#492089", width=2)
 Title = canvas.create_text(200, 40, text="Black G-Y-M", fill="white", font='Helvetica 15 bold')
 #date et heure
