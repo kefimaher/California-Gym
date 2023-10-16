@@ -119,18 +119,20 @@ test2 = tk.Button(r, text='Test', width=10, background="#D3CD00", fg="black", ac
 test2.place(x=550, y=113)
 # button navbar a gauche vertical
 #tableau du bord
-dashbroad = tk.Button(r, text='Tableau du Bord', width=46, background="#D3CD00", fg="black", highlightbackground="red", activebackground="#EED153", activeforeground="black", command=dashbroad_visibility)
+dashbroad = tk.Button(r, text='Tableau du Bord', width=46, background="#D3CD00", fg="black", highlightbackground="black", activebackground="#9B9700"
+                                                                                                                                           ""
+                                                                                                                                           "", activeforeground="black", command=dashbroad_visibility)
 dashbroad.place(x=1, y=180)
 #Item list : afficher un page contien la list des produit dans la table (id,image,nom,prix,quantite)
-items = tk.Button(r, text='Liste des personnes', width=46, background="#D3CD00", fg="black", highlightbackground="#3E4146", activebackground="#D3CD00", activeforeground="black", command=item_visibility)
+items = tk.Button(r, text='Liste des personnes', width=46, background="#D3CD00", fg="black", highlightbackground="#3E4146", activebackground="#9B9700", activeforeground="black", command=item_visibility)
 items.place(x=1, y=230)
 #Button New items : ajouter un produit dans la table (id,image,nom,prix,quantite)
-news = tk.Button(r, text='Ajouter un presonne', width=46, background="#D3CD00", fg="black", highlightbackground="#3E4146", activebackground="#D3CD00", activeforeground="black", command=news_visibility)
+news = tk.Button(r, text='Ajouter un presonne', width=46, background="#D3CD00", fg="black", highlightbackground="#3E4146", activebackground="#9B9700", activeforeground="black", command=news_visibility)
 news.place(x=1, y=280)
 #export
-exp = tk.Button(r, text='Exporter', width=46, background="#D3CD00", fg="black", highlightbackground="#3E4146", activebackground="#D3CD00", activeforeground="black", command=exp_visibility)
+exp = tk.Button(r, text='Exporter', width=46, background="#D3CD00", fg="black", highlightbackground="#3E4146", activebackground="#9B9700", activeforeground="#CDC700", command=exp_visibility)
 exp.place(x=1, y=330)
-setting = tk.Button(r, text='Parametre', width=46, background="#D3CD00", fg="black", highlightbackground="#3E4146", activebackground="#D3CD00", activeforeground="black", command=settings_visibility)
+setting = tk.Button(r, text='Parametre', width=46, background="#D3CD00", fg="black", highlightbackground="#3E4146", activebackground="#9B9700", activeforeground="#CDC700", command=settings_visibility)
 setting.place(x=1, y=700)
 #les pages
 dashbroad = tk.Frame(canvas, width=1500, height=800, background='#BBBBBB')
