@@ -109,13 +109,13 @@ heure_actuelle = date_et_heure_actuelles.now()
 minutes_actuelles = date_et_heure_actuelles.minute
 date_actuelle = date_et_heure_actuelles.date()
 # button name + width
-search = tk.Button(r, text='Chercher', width=10, background="#959100", fg="black", command=on_submit, activebackground="#D3CD00", activeforeground="black")
+search = tk.Button(r, text='Chercher', width=10, background="#959100", fg="black", command=on_submit, activebackground="#D3CD00", activeforeground="black", highlightbackground="#DFD800")
 search.place(x=1380, y=113)
 # button name + width
-test1 = tk.Button(r, text='Test', width=10, background="#959100", fg="black", activebackground="#D3CD00", activeforeground="black")
+test1 = tk.Button(r, text='Test', width=10, background="#959100", fg="black", activebackground="#D3CD00", activeforeground="black", highlightbackground="#DFD800")
 test1.place(x=420, y=113)
 # button name + width
-test2 = tk.Button(r, text='Test', width=10, background="#959100", fg="black", activebackground="#D3CD00", activeforeground="black")
+test2 = tk.Button(r, text='Test', width=10, background="#959100", fg="black", activebackground="#D3CD00", activeforeground="black", highlightbackground="#DFD800")
 test2.place(x=550, y=113)
 # button navbar a gauche vertical
 #tableau du bord
