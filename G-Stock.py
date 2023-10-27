@@ -3,7 +3,7 @@ import datetime
 r = tk.Tk()
 date_et_heure_actuelles = datetime.datetime.now()
 # Titre du page
-r.title('Black G-Y-M')
+r.title('G-Stock')
 #nombrepiece lire
 def dashbroad_visibility():
  dashbroad.place(x=400, y=145)
@@ -103,7 +103,7 @@ canvas.create_rectangle(400, 70, 1500, 0, fill="black")
 # barre de navigation a haut a droite
 canvas.create_rectangle(0, 70, 400, 0, fill="#D3CD00")
 canvas.create_line(400, 145, 1500, 145, fill="#492089", width=2)
-Title = canvas.create_text(200, 40, text="Black G-Y-M", fill="black", font='Helvetica 15 bold')
+Title = canvas.create_text(200, 40, text="G-Stock", fill="black", font='Helvetica 15 bold')
 #date et heure
 heure_actuelle = date_et_heure_actuelles.now()
 minutes_actuelles = date_et_heure_actuelles.minute
