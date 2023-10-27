@@ -119,7 +119,7 @@ test2 = tk.Button(r, text='Test', width=10, background="#683FA9", fg="white", ac
 test2.place(x=550, y=113)
 # button navbar a gauche vertical
 #tableau du bord
-dashbroad = tk.Button(r, text='Tableau du Bord', width=46, background="#D3CD00", fg="black", highlightbackground="red", activebackground="#EED153", activeforeground="black", command=dashbroad_visibility)
+dashbroad = tk.Button(r, text='Tableau du Bord', width=46, background="#683FA9", fg="white", highlightbackground="red", activebackground="#4E2A88", activeforeground="white", command=dashbroad_visibility)
 dashbroad.place(x=1, y=180)
 #Item list : afficher un page contien la list des produit dans la table (id,image,nom,prix,quantite)
 items = tk.Button(r, text='Liste des personnes', width=46, background="#D3CD00", fg="black", highlightbackground="#3E4146", activebackground="#D3CD00", activeforeground="black", command=item_visibility)
