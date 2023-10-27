@@ -109,13 +109,13 @@ heure_actuelle = date_et_heure_actuelles.now()
 minutes_actuelles = date_et_heure_actuelles.minute
 date_actuelle = date_et_heure_actuelles.date()
 # button name + width
-search = tk.Button(r, text='Chercher', width=10, background="#959100", fg="black", command=on_submit, activebackground="#D3CD00", activeforeground="black", highlightbackground="#DFD800")
+search = tk.Button(r, text='Chercher', width=10, background="#683FA9", fg="white", command=on_submit, activebackground="#4E2A88", activeforeground="white", highlightbackground="#DFD800")
 search.place(x=1380, y=113)
 # button name + width
-test1 = tk.Button(r, text='Test', width=10, background="#959100", fg="black", activebackground="#D3CD00", activeforeground="black", highlightbackground="#DFD800")
+test1 = tk.Button(r, text='Test', width=10, background="#683FA9", fg="white", activebackground="#4E2A88", activeforeground="white", highlightbackground="#DFD800")
 test1.place(x=420, y=113)
 # button name + width
-test2 = tk.Button(r, text='Test', width=10, background="#959100", fg="black", activebackground="#D3CD00", activeforeground="black", highlightbackground="#DFD800")
+test2 = tk.Button(r, text='Test', width=10, background="#683FA9", fg="white", activebackground="#4E2A88", activeforeground="white", highlightbackground="#DFD800")
 test2.place(x=550, y=113)
 # button navbar a gauche vertical
 #tableau du bord
@@ -237,7 +237,7 @@ dashbroadstatic1.place(x=100, y=350)
 dashbroadstatic2.place(x=400, y=350)
 dashbroadstatic3.place(x=700, y=350)
 #xyz
-logout = tk.Button(r, text='Déconnexion', highlightbackground="#DFD800", font=("Helvetica 15 bold", 10),  width=10, background="#959100", fg="black", command=r.destroy, activebackground="#D3CD00", activeforeground="black")
+logout = tk.Button(r, text='Déconnexion', highlightbackground="#DFD800", font=("Helvetica 15 bold", 10),  width=10, background="#683FA9", fg="white", command=r.destroy, activebackground="#4E2A88", activeforeground="white")
 logout.place(x=1380, y=20)
 #page setting
 
