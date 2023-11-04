@@ -54,13 +54,13 @@ def exp_visibility():
 def on_submit():
     entered_text = search_zone.get()
     produitarecherche.delete(0, "end")
-    if ((entered_text!="chercher un personne")and(entered_text!="")):
+    if ((entered_text!="chercher un produit")and(entered_text!="")):
        produitarecherche.insert(10, entered_text)
        produitarecherche.place(x=290, y=604)
        r1.place(x=10, y=600)
        r2.place(x=600, y=600)
        search_zone.delete(0, "end")
-       search_zone.insert(0, "chercher un personne")
+       search_zone.insert(0, "chercher un produit")
        news.place(x=1500, y=800)
        setting.place(x=1500, y=800)
        items.place(x=1500, y=800)
@@ -70,7 +70,7 @@ def on_submit():
        dashbroadstatic2.place(x=400, y=350)
        dashbroadstatic3.place(x=700, y=350)
 def on_entry_click(event):
-    if search_zone.get() == "chercher un personne":
+    if search_zone.get() == "chercher un produit":
        search_zone.delete(0, "end")  # Delete current text in the entry
 #button reset
 def reset():
@@ -223,7 +223,7 @@ produitannulerbutton.place(x=600, y=500)
 #page rechrcher
 #serach zone button
 search_zone = tk.Entry(r)
-search_zone.insert(10, "chercher un personne")
+search_zone.insert(10, "chercher un produit")
 search_zone.place(x=1200, y=117)
 r1 = tk.Label(dashbroad, text="Produit a Rechercher :", font=("Arial", 20), fg="#683FA9", background="#BBBBBB")
 r2 = tk.Label(dashbroad, text="Nombre des Pièce Trouve :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
