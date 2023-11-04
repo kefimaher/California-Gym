@@ -229,9 +229,9 @@ r1 = tk.Label(dashbroad, text="Produit a Rechercher :", font=("Arial", 20), fg="
 r2 = tk.Label(dashbroad, text="Nombre des Pièce Trouve :", font=("Arial", 18), fg="#683FA9", background="#BBBBBB")
 search_zone.bind("<FocusIn>", on_entry_click)
 #rectangele du tableu du bord
-dashbroadstatic1 = tk.Button(dashbroad, text='Nombre des personne abonnés : 300', height=8, width=30,  background="#683FA9", state='disabled')
-dashbroadstatic2 = tk.Button(dashbroad, text='Personnes dans la salle : 1500', height=8, width=30, background="#683FA9", state='disabled')
-dashbroadstatic3 = tk.Button(dashbroad, text='', height=8, width=30, background="#683FA9", state='disabled')
+dashbroadstatic1 = tk.Button(dashbroad, text='Nombre produit total : 300', height=8, fg="white", width=30,  background="#683FA9")
+dashbroadstatic2 = tk.Button(dashbroad, text='Nombre des commandes : 1500', height=8, fg="white", width=30,  background="#683FA9")
+dashbroadstatic3 = tk.Button(dashbroad, text='Capital social : 100,000', height=8, fg="white", width=30,  background="#683FA9")
 produitarecherche  = tk.Entry(dashbroad, background="#BBBBBB", bd="0", fg="#683FA9", font=("Arial", 16), highlightbackground="#BBBBBB")
 dashbroadstatic1.place(x=100, y=350)
 dashbroadstatic2.place(x=400, y=350)
